@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="capeb.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">    
+    <!-- JAVASCRIPT-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="capeb.js"></script>
+    <!-- FLICKETY-->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
+         HTML5 fonctionne correctement avec les anciennes versions de
+         Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+    <title>CAPEB-Home-Page1</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="header">
+    <a href="" class="logo">
+      <img src="assets/logoCapeb.png" alt="logo-CAPEB" />
+    </a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="#work">Actualités<br>et évènements</a></li>
+      <li><a href="#about">Les marchés</a></li>
+      <li><a href="#careers">Le CIP Patrimoine</a></li>
+      <li><a href="#contact">Mon parcours patrimoine</a></li>
+      <li><a href="#contact">Contacts et annuaires</a></li>
+    </ul>
+  </header>
+  <!-- END NAVBAR -->
+
+    <!-- CAROUSEL-->
+    <div style="padding-top: 100px; min-height: 550px;" id="carousel" data-flickity>
+      <!-- 1ST IMAGE-->
+      <div  class="carousel-cell">
+        <img  src="assets/carousel1.png"/>
+        <div class='overlay'></div>
+        <div class="carousel-cell-text" >
+          <p>Un site dédié au patrimoine bâti</p>
+        </div>
+        <div class="carousel-cell-text2">
+          <p>La CAPEB vous informe et vous accompagne sur ses marchés</p>
+        </div>
+      </div>
+      <!--END 1ST IMAGE-->
+
+      <!-- 2ND IMAGE -->
+      <div  class="carousel-cell">
+        <img src="assets/carousel2.png"/>
+        <div class='overlay'></div>
+        <div class="carousel-cell-text" >
+          <p>Les artisans du patrimoine se font connaître<br>et reconnaître</p>
+        </div>
+        <div class="carousel-cell-text2">
+          <p >Pour permettre aux artisans qui interviennent sur les marchés du patrimoine de se faire 
+            connaître et de valoriser ce qu’ils savent faire, la CAPEB a créé en 1998, 
+            le CIP Patrimoine : le Certificat d’Identité Professionnelle.</p>
+        </div>
+      </div>
+      <!--END 2ND IMAGE -->
+
+      <!-- 3RD IMAGE-->
+      <div  class="carousel-cell">
+        <img src="assets/carousel3.png"/>
+        <div class='overlay'></div>
+        <div class="carousel-cell-text" >
+          <p >Comment mieux vous positionner sur les marchés<br>du patrimoine ?</p>
+        </div>
+        <div class="carousel-cell-text2" >
+          <p>La CAPEB vous accompagne dans votre connaissance de ces 
+            marchés et dans votre parcours personnel pour y accéder ou pour vous aider à y développer 
+            votre activité + renvoi vers la page « les marchés du patrimoine »
+          </p>
+        </div>
+      </div>
+       <!-- END 3RD IMAGE-->
+    </div>
+    <!-- END CAROUSEL -->
+
+    <!-- RED BUTTON -->
+    <div id="carousel-button">
+      <a href="#blocs-bat">
+        <img src="assets/button-arrow.png" alt="button-arrow" />
+      </a>
+    </div>
+    <!-- END RED BUTTON -->
+
+    <!-- BLOC TEXT -->
+    <div id="bloc-text">
+      <div id="bloc-text-title">
+        <p>
+          Les clés du patrimoine
+        </p>
+      </div>
+      <div id="bloc-text-subtitle">
+        <p>
+          Tous les évènements du patrimoine. Quels marchés ? 
+          Comme y accéder, y progresser, y exceller ? 
+          Comment faire reconnaitre son savoir-faire ? 
+          Quels partenaires ? Où trouver un artisan du patrimoine ? 
+          Trouvez ici les réponses à vos questions !
+        </p>
+      </div>
+    </div>
+    <!-- END BLOC TEXTE -->
+
+    <!--BLOCS IMAGES-->
+    <div id="blocs-bat">
+      <div id="blocs-bat-flex">
+        <div class="blocs-bat-flex-pics">
+          <a href="#">
+            <img class="bloc-group-violet"  src="assets/Group 6.png" alt="card1">
+            <img class="bloc-group-white"  src="assets/Group 2.png" alt="card1">
+            <div class="blocs-bat-pics-title">
+              <div>
+                <p>Actualités et évènements</p>
+              </div>
+            </div>
+            <div class='blocs-overlay violet'></div>
+            <div class="blocs-flex-image">
+              <img src="assets/card2-adobe.png" alt>
+            </div>
+          </a>
+        </div>
+        <div class="blocs-bat-flex-pics">
+          <a href="#">
+            <img class="bloc-group-violet" src="assets/Group 5.png" alt="card1">
+            <img class="bloc-group-white" src="assets/Group 2.png" alt="card1">
+            <div class="blocs-bat-pics-title">
+              <div>
+                <p>Les marchés</p>
+              </div>
+            </div>
+            <div class='blocs-overlay red'></div>
+            <div class="blocs-flex-image">
+              <img src="assets/card1-adobe-jpg.png" alt>
+            </div>
+          </a>
+        </div>
+        <div class="blocs-bat-flex-pics">
+          <a href="#">
+            <img class="bloc-group-violet" src="assets/Group 6.png" alt="card1">
+            <img class="bloc-group-white" src="assets/Group 2.png" alt="card1">
+            <div class="blocs-bat-pics-title">
+              <div>
+                <p>Le CIP Patrimoine</p>
+              </div>
+            </div>
+              <div class='blocs-overlay violet'></div>
+              <div class="blocs-flex-image">
+                <img src="assets/card3-adobe.png" alt>
+              </div>
+          </a>
+        </div>
+
+            <div class="blocs-bat-flex-pics">
+              <a href="" style="cursor: pointer;">
+                <img class="bloc-group-violet" src="assets/Group 5.png" alt="card1">
+                <img class="bloc-group-white" src="assets/Group 2.png" alt="card1">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>Mon parcours patrimoine</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay red'></div>
+                <div class="blocs-flex-image">
+                  <img  src="assets/card4-re.png" alt>
+                </div>
+              </a>
+            </div>
+            <div class="blocs-bat-flex-pics">
+              <a href="" style="cursor: pointer;">
+                <img class="bloc-group-violet"  src="assets/Group 6.png" alt="card1">
+                <img class="bloc-group-white" src="assets/Group 2.png" alt="card1">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>Contacts et annuaires</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay violet'></div>
+                <div class="blocs-flex-image">
+                  <img  src="assets/card5-adobe.png" alt>
+                </div>
+              </a>
+            </div>
+            <div class="blocs-bat-flex-pics">
+              <a href="" style="cursor: pointer;">
+                <img class="bloc-group-violet" src="assets/Group 5.png" alt="card1">
+                <img class="bloc-group-white" src="assets/Group 2.png" alt="card1">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>Qui sommes-nous ?</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay red'></div>
+                <div class="blocs-flex-image">
+                  <img  src="assets/card6-adobe.jpg" alt>
+                </div>
+              </a>
+            </div>
+      </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">    
+        <div class="section">
+          <p>PLAN DU SITE</p>
+          <ul>
+            <li><a href="#">Actualités et évènements</a></li>
+            <li><a href="#">Les marchés</a></li>
+            <li><a href="#">Le CIP Patrimoine</a></li>
+            <li><a href="#">Mon parcours patrimoine</a></li>
+            <li><a href="#">Contacts et annuaires</a></li>
+            <li><a href="#">Nous contacter</a></li>
+          </ul>
+        </div>
+        <div class="section">
+          <p>MENTIONS LEGALES</p>
+          <ul>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de gestion des cookies</a></li>
+          </ul>
+        </div>
+        <div class="section">
+          <p>RESEAUX SOCIAUX</p>
+          <ul>
+            <li>
+              <a href="#" ><img src="./assets/frame.png" alt="frame" style="margin-right: 10px"/></a>
+              <a href="#" ><img src="./assets/Frame (1).png" style="margin-right: 10px"/></a>
+              <a href="#" ><img src="./assets/Frame (2).png" style="margin-right: 10px"/></a>
+              <a href="#" ><img src="./assets/Frame (3).png" style="margin-right: 10px"/></a>
+              <a href="#" ><img src="./assets/Frame (4).png" style="margin-right: 10px"/></a>
+            </li>
+            <li id="footer-capeb-flex">
+              <p>Par la</p>
+              <img src="./assets/image 1.png" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div id="sub-footer">
+        <p>CAPEB - Copyright 2020</p>
+    </div>
+    <!-- END FOOTER -->
+</body>
+</html>

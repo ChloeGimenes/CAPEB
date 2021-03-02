@@ -54,7 +54,7 @@ body {
     font-size: 32px;
   }
   h4 {
-    font-size: 15px!important;
+    font-size: 16px!important;
   }
 
   h4 {
@@ -99,7 +99,6 @@ body {
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
   color: #000;
 }
 
@@ -303,7 +302,12 @@ a{
 
 
 /* CAROUSEL //////////////////////////////////////////////////////////*/  
-  
+
+  #flickity-viewport {
+    padding-top: 100px; 
+    min-height: 550px;
+  }
+
   #carousel {
     background: #EEE;
     padding-top: 100px!important; 
@@ -599,11 +603,6 @@ a{
   width: 100%; 
   height: auto; 
 }
-@media screen and (max-width: 430px) {
-  .bloc-image div { margin: 0; }
-  .bloc-image { padding: 0; }
-  
-}
 
 .blocs-overlay {
   height: 100%;
@@ -682,9 +681,11 @@ a:hover .bloc-group-white {
   }
 }
 
-
-
-
+@media screen and (max-width: 430px) {
+  .bloc-image div { margin: 0; }
+  .bloc-image { padding: 0; }
+  
+}
 
 
 /* FOOTER ///////////////////////////////////////////////////////////*/
@@ -719,7 +720,7 @@ body{
     text-decoration:none;
     font-size:1em;
     color:gray;
-    transition:0.5s;
+    /* transition:0.5s; */
     }
     
     .footer .column ul li a:hover{
@@ -854,7 +855,7 @@ body{
         font-size:18px;
         color: #222220;
         opacity: 0.75;
-        transition:0.5s;
+        /* transition:0.5s; */
         margin-right: 10px;
         }
 

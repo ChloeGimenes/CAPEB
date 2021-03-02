@@ -294,7 +294,7 @@ body {
     } 
 
     .carousel-cell-text h4 {
-margin-top: 24px
+      margin-top: 24px
     }
 
     .carousel-cell-text2 {
@@ -549,7 +549,7 @@ a:hover .violet {
   background: #602483
 }
 
-a:hover .bloc-group-violet {
+a:hover .bloc-group-color {
   display: none;
 }
 

@@ -8,6 +8,27 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
  }
 
+ h1 {
+   font-size: 48px;
+   font-weight: bold;
+   /* color: #222220; */
+ }
+
+ h2 {
+   font-size: 32px;
+   font-weight: bold;
+ }
+
+ h3 {
+   font-size: 20px;
+   font-weight: bold;
+ }
+
+ h4 {
+   font-size: 18px;
+   font-weight: normal;
+ }
+
 /* NAVBAR //////////////////////////////////////////////////////////////////*/
 
 /* body {
@@ -268,23 +289,19 @@ body {
       width: 74vw;
     }
 
-    .carousel-cell-text p {
-      font-size: 48px; 
-      font-weight: bold; 
+    .carousel-cell-text h1 {
       margin: 0px;
     } 
 
     .carousel-cell-text2 {
-
       position:absolute; 
       z-index: 100;
       text-align: center;
       margin-top: 306px;
-      font-size: 18px; 
-      font-weight: normal; 
       color: white;
 
       width: 73vw;
+
     }
 
     .overlay {
@@ -386,14 +403,14 @@ body {
   margin: 104px 165px 0px 165px;
 }
 
-#bloc-text-title p {
+#bloc-text-title h2 {
   font-size:32px; 
   font-weight: bold;
   text-align: center; 
   color: #222220"
 }
 
-#bloc-text-subtitle p{
+#bloc-text-subtitle h4{
   font-size:18px;
   text-align: center; 
   color: #222220"
@@ -726,9 +743,10 @@ body{
         /* border: 1px solid; */
       }
 
-      .container .section p {
+      .container .section h3 {
         font-size: 20px; 
         font-weight: bold;
+        text-transform: uppercase;
         /* line-height: 1; */
       }
       
@@ -749,6 +767,8 @@ body{
         font-size:18px;
         color:gray;
         transition:0.5s;
+
+        margin-right: 10px;
         }
         
         .container .section ul li a:hover{

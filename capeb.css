@@ -293,11 +293,15 @@ body {
       margin: 0px;
     } 
 
+    .carousel-cell-text h4 {
+margin-top: 24px
+    }
+
     .carousel-cell-text2 {
       position:absolute; 
       z-index: 100;
       text-align: center;
-      margin-top: 306px;
+      margin-top: 248px;
       color: white;
 
       width: 73vw;

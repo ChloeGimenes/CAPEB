@@ -102,7 +102,7 @@ body {
 .header li a {
   display: block;
   /* padding: 20px 20px; */
-  border-right: 1px solid #f4f4f4;
+  /* border-right: 1px solid #f4f4f4; */
   text-decoration: none;
   color: rgba(16, 16, 16, 0.6);
 
@@ -205,21 +205,21 @@ a{
   top: 0;
 }
 
-.active span {
+.header-active span {
   border-bottom: 2px solid #e6362d; 
   width: 20px; 
   margin-top: 17px;
   display: block!important
 }
 
-.active #menu-line-short {
+.header-active #menu-line-short {
   border-bottom: 2px solid #e6362d; 
   width: 20px; 
   margin-top: 6px!important;
   display: block!important
 }
 
-.active a {
+.header-active a {
   font-weight: bold;
   color: #101010!important;
   opacity: 1!important;
@@ -230,7 +230,7 @@ a{
   .header .menu {
     font-size: 18px!important;
   }
-  .active #menu-line-short {
+  .header-active #menu-line-short {
     border-bottom: 2px solid #e6362d; 
     width: 20px; 
     margin-top: 10px!important;
@@ -289,10 +289,10 @@ a{
   .menu li:last-child {
     padding-bottom: 30px!important;
   }
-  .active span {
+  .header-active span {
       margin-top: 4px;
   }
-  .active #menu-line-short {
+  .header-active #menu-line-short {
     margin-top: 4px!important;
   }
   .header .menu-btn:checked ~ .menu {
@@ -995,3 +995,155 @@ a:hover .bloc-group-white {
     }
 
   }
+
+
+  /* PAGE ACTUS ///////////////////////////////////////////////////////////////////////////////*/
+
+    /* PAGINATION ////////////////////*/
+    /* .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 56px;
+    }
+    
+    .pagination a {
+      color: black;
+      float: left;
+      padding: 1px 9px 3px 8px;
+      text-decoration: none;
+    }
+    
+    .pagination a.active {
+      background-color: #222220;
+      color: white;
+      border-radius: 50px;
+    }
+    
+    .pagination a:hover:not(.active) {
+      background-color: #ddd;
+      border-radius: 25px;
+    } */
+
+
+  /* BREDCRUMB */
+
+  .breadcrumb {
+    font-size: 18px;
+  }
+
+  .breadcrumb-item > a {
+    color: #222200!important;
+    text-decoration: none;
+  } 
+
+  .breadcrumb-item:last-child {
+    font-weight: bold!important;
+    color:#222200!important
+  }
+
+
+  /* PAGINATION */
+
+  #actu-pagination nav ul li a {
+    color: black;  }
+
+  .page-item.active .page-link {
+  background-color:#222220!important;
+  border-color: transparent!important;
+
+
+  outline: none !important;
+  box-shadow: none;
+  }
+
+
+  .page-item.active a.page-link {
+    color: white!important;
+  border-color: transparent!important;
+
+  }
+
+
+
+
+    /* CALENDAR //////////////*/
+
+    #calendar {
+      /* max-width: 540px;
+      max-height: 521px; */
+  
+    }
+
+
+
+    .fc-theme-standard td, .fc-theme-standard th {
+    
+      border: 1px solid #fff!important;
+    }
+
+    .fc .fc-daygrid-day-frame {
+      position: relative;
+      min-height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .fc-theme-standard .fc-scrollgrid {
+    border: 1px solid #fff!important;
+
+  }
+
+  button.fc-today-button.fc-button-primary {
+    display: none;
+  }
+
+  button.fc-next-button.fc-button.fc-button-primary,
+  button.fc-prev-button.fc-button.fc-button-primary {
+
+    background-color: white;
+    border-radius: 50px!important;
+    padding: 2px!important;
+
+  }
+
+  button.fc-prev-button.fc-button.fc-button-primary {
+    margin-right: 25px;
+  }
+
+  span.fc-icon.fc-icon-chevron-left ,
+  span.fc-icon.fc-icon-chevron-right {
+    color: black;
+  }
+
+  .fc .fc-button-group>.fc-button {
+    position: relative;
+    flex: none!important;
+  }
+
+  /* CHANGING BOOTSTRAP NATIVS COLORS*/
+  div.fc-scrollgrid-sync-inner > .fc-col-header-cell-cushion {
+    color: black!important;
+    text-decoration: none!important;
+  }
+  div.fc-daygrid-day-top > a.fc-daygrid-day-number {
+    color: black!important;
+    text-decoration: none!important;
+
+  }
+
+  /* CHANGING BACKGROUND COLOR TODAY DATE*/
+  .fc .fc-daygrid-day.fc-day-today {
+    background-color: #92d4b0!important;
+  }
+
+  .fc .fc-daygrid-day.fc-day-today {
+    
+  }
+
+  .fc .fc-daygrid-day.fc-day-today .fc.day-grid-day-top > a.fc-daygrid-day-number  {
+
+    border: 1px solid black!important;
+    border-radius: 50px;
+  }
+ 

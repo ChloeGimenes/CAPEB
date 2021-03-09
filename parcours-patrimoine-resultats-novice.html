@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- JAVASCRIPT-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="capeb.js"></script>
+    
+    <!-- BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- FLICKETY-->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS -->
+    <link href="capeb.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">    
+    
+    <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
+         HTML5 fonctionne correctement avec les anciennes versions de
+         Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    <title>CAPEB-Parcours patrimoine-Page1</title>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header  class="header">
+    <div class="header-container" >
+      <a href="" class="logo">
+        <img src="assets/logoCapeb.png" alt="logo-CAPEB" />
+      </a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li>
+          <a href="#work">Actualités<br>et évènements</a>
+          <span id="menu-line-short" ></span>
+        </li>
+        <li>
+          <a href="#about">Les marchés</a>
+          <span></span>
+        </li>
+        <li>
+          <a href="#careers">Le CIP Patrimoine</a>
+          <span></span>
+        </li>
+        <li>
+          <a href="#contact">Mon parcours patrimoine</a>
+          <span></span>
+        </li>
+        <li>
+          <a href="#contact">Contacts et annuaires</a>
+          <span></span>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- END NAVBAR -->
+
+  <div id="parcours-results-main">
+    <!-- BREADCRUMB-->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Mon parcours patrimoine</li>
+      </ol>
+    </nav>
+    <!-- END BREADCRUMB-->
+
+    <h1>
+      Mon parcours patrimoine
+    </h1>
+
+    <!-- RESULTS PART-->
+    <div id="parcours-results">
+      <!-- BLOC IMAGE + TEXT-->
+      <div id="parcours-results-bloc" >
+        <div>
+          <div id="parcours-results-bloc-image">
+              <img  src="./assets/parcours/taille.jpg">
+              <div></div>  
+          </div>
+        </div>
+        <div id="parcours-results-bloc-text">
+          <div>
+            <h1>50 pts</h1>
+            <h3>...Vous êtes <span>"Novice"</span></h3>
+            <h4>
+              Vous êtes un novice du marché du patrimoine. Vous êtes curieux et souhaitez découvrir les richesses et les ressources du patrimoine bâti.
+              Votre savoir-faire sera valorisé dans ce domaine en réalisant un parcours patrimoine au sein de votre CAPEB. L’appropriation des rouages du marché du patrimoine permettra à vos connaissances de se consolider. Ainsi votre position sur ce secteur sera renforcée.
+            </h4>
+          </div>
+          <div>
+            <button class="btn btn-primary button-patrimoine">Modifier mes réponses</button>
+          </div>
+        </div>
+      </div>
+     <!-- END BLOC IMAGE + TEXT-->
+   </div>
+    <!-- END RESULTS PART-->
+
+    <h2>
+      Ces actions peuvent vous aider
+    </h2>
+
+    <!-- 3 IMAGES-->
+
+    <div class="blocs-bat-flex-parcours" >
+      <div class="blocs-bat-flex-pics parcours" >
+        <a href="#">
+          <img class="bloc-group-color"  src="assets/group-orange.png" alt="card1">
+          <img class="bloc-group-white"  src="assets/group-white.png" alt="card2">
+          <div class="blocs-bat-pics-title">
+            <div>
+              <p>Elargissez votre réseau en<br> 
+                rencontrant d'autres professionnels</p>
+            </div>
+          </div>
+          <div class='blocs-overlay red-opacity'></div>
+          <div class="blocs-flex-image">
+            <img src="assets/parcours/action-elargissez-votre-reseau.jpg" alt>
+          </div>
+        </a>
+      </div>
+      <div class="blocs-bat-flex-pics parcours">
+        <a href="#">
+          <img class="bloc-group-color" src="assets/group-violet.svg" alt="card1">
+          <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
+          <div class="blocs-bat-pics-title">
+            <div>
+              <p>Complétez vos connaissances pour 
+                mieux les valoriser</p>
+            </div>
+          </div>
+          <div class='blocs-overlay violet-opacity'></div>
+          <div class="blocs-flex-image">
+            <img src="assets/parcours/action-completez-vos-connaissances.jpg" alt>
+          </div>
+        </a>
+      </div>
+      <div class="blocs-bat-flex-pics parcours">
+        <a href="#">
+          <img class="bloc-group-color" src="assets/group-orange.svg" alt="card1">
+          <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
+          <div class="blocs-bat-pics-title">
+            <div>
+              <p>Faites vous accompagner pour mieux 
+                vous positionner sur votre marché</p>
+            </div>
+          </div>
+          <div class='blocs-overlay red-opacity'></div>
+          <div class="blocs-flex-image">
+            <img src="assets/parcours/action-faites-vous-accompagner.jpg" alt>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!--END " IMAGES"-->
+
+    <a href="#parcours-bloc-form" >
+      <h4>
+        Pour toutes ces actions, nous vous invitons à prendre contact avec la CAPEB de votre département.
+      </h4>
+    </a>
+
+    <h2 >
+    Vous souhaitez être contacté par la CAPEB ?
+    </h2>
+
+   <!-- BLOC FORM-->
+    <div id="parcours-bloc-form" >
+    <!-- VIOLET PART-->
+      <div id="parcours-bloc-form-violet">
+        <h5>Afin de mieux vous accompagner dans la réalisation de vos objectifs au regard des marchés du patrimoine, nous vous invitons à prendre 3 minutes pour répondre à ce quizz. Il nous permettra d'identifier votre positionnement actuel et de définir 3 principales actions qui pourraient vous être utiles. 
+          N'hésitez pas à jouer le jeu, vous pourrez <a href="#">modifier vos réponses</a> à la fin de ce court questionnaire.
+        </h5>
+      </div>
+    <!-- END VIOLET PART-->
+    <div>
+      <form>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="username">Nom *</label>
+            <input  type="text" class="form-control mt-2" id="username" placeholder="Ex: Dupont" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="userlastname">Prénom *</label>
+            <input type="text" class="form-control mt-2" id="userlastname" placeholder="ex: Maria" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefaultUsername">Mail *</label>
+            <input type="text" class="form-control mt-2" id="usermail" placeholder="Ex: maria.dupont@gmail.com" aria-describedby="inputGroupPrepend2" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault03">Numéro de téléphone *</label>
+            <input id="userphone_input" type="text" class="form-control mt-2" id="userphone" placeholder="Ex: 06 01 02 03 04" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="validationDefault04">Numéro de département *</label>
+            <input type="text" class="form-control mt-2" id="userdept" placeholder="Ex: 92000" required>
+          </div>
+        </div>
+        
+        <div id="parcours-bloc-form-buttons">
+          <div class="align-self-end">
+           <button id="button-contact-capeb" class="btn btn-primary"  type="submit" >Je veux contacter la CAPEB</button>
+           <button  id="button-contact-form" class="btn btn-primary button-patrimoine" type="submit" disabled>Je veux être contacté</button>
+          </div> 
+        </div>
+      </form>  
+    </div>
+  </div>
+  <!-- END BLOC FORM -->
+
+  <!-- BLOC ALLER PLUS LOIN-->
+  <h2>
+    Pour aller plus loin
+  </h2>
+  <div id="parcours-bloc-aller" >
+  <!-- VIOLET PART-->
+    <div >
+      <h5 >
+        Au-delà d'une action ponctuelle que vous pourriez vouloir réaliser dans le cadre d'une opération donnée, la CAPEB de votre département peut vous accompagner dans un parcours personnalisé plus complet, 
+        qu'il s'agisse de valoriser votre savoir-faire, de favoriser le contact avec vos clients, de répondre à vos questions sur le marché, de vous proposer des formations pour compléter vos compétences ou 
+        encore d'échanger avec d'autres professionnels en lien avec le patrimoine.
+        <a href="#">Plusieurs actions</a> sont ainsi envisageables (voir ci-dessous).      
+    </div>
+  </div>
+  <!-- END BLOC ALLER PLUS LOIN-->
+
+  <!-- ACCORDIONS -->
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <!--1ST ACC-->
+    <div class="accordion-item shadow-none">
+      <div class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <h2>Des moments d'échanges et d'informations</h2>
+        </button>
+      </div>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <!-- IMAGES -->
+          <h3 style="color: #e6362d; margin-top: 30px;">
+            Sélectionner une action à entreprendre
+          </h3> 
+          <div class="blocs-bat-flex-parcours" style="margin-top: 0px; margin-bottom: 30px " >
+            <div class="blocs-bat-flex-pics" >
+              <a href="#">
+                <img class="bloc-group-color"  src="assets/group-orange.svg" alt="card1">
+                <img class="bloc-group-white"  src="assets/group-white.svg" alt="card2">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>Modalités pour répondre à un marché public</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay red-opacity'></div>
+                <div class="blocs-flex-image">
+                  <img src="assets/parcours/action-modalites-pour-repondre.jpg" alt>
+                </div>
+              </a>
+            </div>
+            <div class="blocs-bat-flex-pics">
+              <a href="#">
+                <img class="bloc-group-color" src="assets/group-violet.svg" alt="card1">
+                <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>Modalités pour valoriser son savoir-faire internet</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay violet-opacity'></div>
+                <div class="blocs-flex-image">
+                  <img src="assets/parcours/action-modalites-pour-valoriser.jpg" alt>
+                </div>
+              </a>
+            </div>
+            <div class="blocs-bat-flex-pics">
+              <a href="#">
+                <img class="bloc-group-color" src="assets/group-orange.svg" alt="card1">
+                <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>points d'actualités sur la réglementation technique</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay red-opacity'></div>
+                <div class="blocs-flex-image">
+                  <img src="assets/parcours/action-point-actualites.jpg" alt>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--END " IMAGES"-->
+        </div>
+      </div>
+    </div>
+    <!--END 1ST ACC-->
+
+    <!--2ND ACC-->
+    <div class="accordion-item">
+      <div class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <h2>Des formations ciblées</h2>
+        </button>
+      </div>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <!-- IMAGES -->
+          <h3>
+            Sélectionner une action à entreprendre
+          </h3> 
+          <div class="blocs-bat-flex-parcours"  >
+            <div class="blocs-bat-flex-pics" >
+              <a href="#">
+                <img class="bloc-group-color"  src="assets/group-orange.svg" alt="card1">
+                <img class="bloc-group-white"  src="assets/group-white.svg" alt="card2">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>Formations spécifiques au<br> patrimoine : techniques,label, environnement et urbanisme, etc</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay red-opacity'></div>
+                <div class="blocs-flex-image">
+                  <img src="assets/parcours/action-modalites-pour-repondre.jpg" alt>
+                </div>
+              </a>
+            </div>
+            <div class="blocs-bat-flex-pics">
+              <a href="#">
+                <img class="bloc-group-color" src="assets/group-violet.svg" alt="card1">
+                <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>Accompagnement à la réalisation du
+                      dossier CIP mention patrimoine</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay violet-opacity'></div>
+                <div class="blocs-flex-image">
+                  <img src="assets/parcours/action-modalites-pour-valoriser.jpg" alt>
+                </div>
+              </a>
+            </div>
+            <div class="blocs-bat-flex-pics">
+              <a href="#">
+                <img class="bloc-group-color" src="assets/group-orange.svg" alt="card1">
+                <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>Accompagnement à la formation 
+                      Qualibat mention patrimoine bâti</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay red-opacity'></div>
+                <div class="blocs-flex-image">
+                  <img src="assets/parcours/action-point-actualites.jpg" alt>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--END " IMAGES"-->
+        </div>
+      </div>
+    </div>
+    <!--END 2ND ACC-->
+
+    <!--3RD ACC-->
+    <div class="accordion-item">
+      <div class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          <h2>Des rencontres pour partager</h2>
+        </button>
+      </div>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <!-- IMAGES-->
+          <h3>
+            Sélectionner une action à entreprendre
+          </h3> 
+
+          <div class="blocs-bat-flex-parcours">
+            <div class="blocs-bat-flex-pics" >
+              <a href="#">
+                <img class="bloc-group-color"  src="assets/group-orange.svg" alt="card1">
+                <img class="bloc-group-white"  src="assets/group-white.svg" alt="card2">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>Rencontre avec un partenaire et échanges. Exemple : CAUE, DRAC, ABF, etc.</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay red-opacity'></div>
+                <div class="blocs-flex-image">
+                  <img src="assets/parcours/action-modalites-pour-repondre.jpg" alt>
+                </div>
+              </a>
+            </div>
+            <div class="blocs-bat-flex-pics">
+              <a href="#">
+                <img class="bloc-group-color" src="assets/group-violet.svg" alt="card1">
+                <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>Fondation du patrimoine : présentation de leur fonctionnement</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay violet-opacity'></div>
+                <div class="blocs-flex-image">
+                  <img src="assets/parcours/action-modalites-pour-valoriser.jpg" alt>
+                </div>
+              </a>
+            </div>
+            <div class="blocs-bat-flex-pics">
+              <a href="#">
+                <img class="bloc-group-color" src="assets/group-orange.svg" alt="card1">
+                <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>Echange avec d'autres artisans travaillant sur le bâti ancien, remise du CIP mention patrimoine avec le spromitions précédentes etc.</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay red-opacity'></div>
+                <div class="blocs-flex-image">
+                  <img src="assets/parcours/les-marches.jpg" alt>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--END IMAGES-->
+        </div>
+      </div>
+    </div>
+    <!--END 3RD ACC-->
+
+    <!--4TH ACC-->
+    <div class="accordion-item">
+      <div class="accordion-header" id="flush-headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          <h2>Visites</h2>
+        </button>
+      </div>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <!-- IMAGES-->
+          <h3>
+            Sélectionner une action à entreprendre
+          </h3> 
+          <div class="blocs-bat-flex-parcours">
+            <div class="blocs-bat-flex-pics" >
+              <a href="#">
+                <img class="bloc-group-color"  src="assets/group-orange.svg" alt="card1">
+                <img class="bloc-group-white"  src="assets/group-white.svg" alt="card2">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>Visite de chantiers avec une thématique propre selon les différents métiers mais en lien avec le patrimoine</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay red-opacity'></div>
+                <div class="blocs-flex-image">
+                  <img src="assets/parcours/action-modalites-pour-repondre.jpg" alt>
+                </div>
+              </a>
+            </div>
+            <div class="blocs-bat-flex-pics">
+              <a href="#">
+                <img class="bloc-group-color" src="assets/group-violet.svg" alt="card1">
+                <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>Visite guidée d'un chantier sur du bâti ancien en cours dans le département</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay violet-opacity'></div>
+                <div class="blocs-flex-image">
+                  <img src="assets/parcours/action-modalites-pour-valoriser.jpg" alt>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--END " IMAGES"-->
+        </div>
+      </div>
+    </div>
+    <!--END 4TH ACC-->
+
+    <!--5TH ACC-->
+    <div class="accordion-item">
+      <div class="accordion-header" id="flush-headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+          <h2>Constitution de votre dossier CIP Patrimoine</h2>
+        </button>
+      </div>
+      <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <!--IMAGES-->
+          <h3>
+            Sélectionner une action à entreprendre
+          </h3> 
+          <div class="blocs-bat-flex-parcours">
+            <div class="blocs-bat-flex-pics" >
+              <a href="#">
+                <img class="bloc-group-color"  src="assets/group-orange.svg" alt="card1">
+                <img class="bloc-group-white"  src="assets/group-white.svg" alt="card2">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>Accompagnement pour compléter le
+                      dossier CIP mention Patrimoine</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay red-opacity'></div>
+                <div class="blocs-flex-image">
+                  <img src="assets/parcours/action-modalites-pour-repondre.jpg" alt>
+                </div>
+              </a>
+            </div>
+            <div class="blocs-bat-flex-pics">
+              <a href="#">
+                <img class="bloc-group-color" src="assets/group-violet.svg" alt="card1">
+                <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>Présentation de votre dossier CIP 
+                      devant le jury</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay violet-opacity'></div>
+                <div class="blocs-flex-image">
+                  <img src="assets/parcours/action-modalites-pour-valoriser.jpg" alt>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--END " IMAGES"-->
+        </div>
+      </div>
+    </div>
+    <!--END 5TH ACC-->
+
+    <!--6TH ACC-->
+    <div class="accordion-item">
+      <div class="accordion-header" id="flush-headingSix">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+          <h2>Participation aux journées locales</h2>
+        </button>
+      </div>
+      <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <!-- IMAGES-->
+          <h3>
+            Sélectionner une action à entreprendre
+          </h3> 
+          <div class="blocs-bat-flex-parcours" >
+            <div class="blocs-bat-flex-pics" >
+              <a href="#">
+                <img class="bloc-group-color"  src="assets/group-orange.svg" alt="card1">
+                <img class="bloc-group-white"  src="assets/group-white.svg" alt="card2">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>Participez aux événements 
+                      Patrimoine organisés localement 
+                      (journées portes ouvertes, salon, 
+                      forum, etc...)</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay red-opacity'></div>
+                <div class="blocs-flex-image">
+                  <img src="assets/parcours/action-modalites-pour-repondre.jpg" alt>
+                </div>
+              </a>
+            </div>
+            <div class="blocs-bat-flex-pics">
+              <a href="#">
+                <img class="bloc-group-color" src="assets/group-violet.svg" alt="card1">
+                <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
+                <div class="blocs-bat-pics-title">
+                  <div>
+                    <p>Accompagnement à votre intervention
+                      et participation à un événement
+                      Patrimoine local</p>
+                  </div>
+                </div>
+                <div class='blocs-overlay violet-opacity'></div>
+                <div class="blocs-flex-image">
+                  <img src="assets/parcours/action-modalites-pour-valoriser.jpg" alt>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--END IMAGES-->
+        </div>
+      </div>
+    </div>
+    <!--END 6TH ACC-->
+  </div>
+  <!--END ACCORDIONS-->
+
+
+
+
+</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div id="home-footer-container-queries">
+      <div id="footer-container">    
+        <div class="section">
+          <h3>PLAN DU SITE</h3>
+          <ul>
+            <li><a href="#">Actualités et évènements</a></li>
+            <li><a href="#">Les marchés</a></li>
+            <li><a href="#">Le CIP Patrimoine</a></li>
+            <li><a href="#">Mon parcours patrimoine</a></li>
+            <li><a href="#">Contacts et annuaires</a></li>
+            <li><a href="#">Nous contacter</a></li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3>MENTIONS LéGALES</h3>
+          <ul>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de gestion des cookies</a></li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3>RéSEAUX SOCIAUX</h3>
+          <ul>
+            <li>
+              <a href="#" ><img src="./assets/youtube.svg" alt="youtube" /></a>
+              <a href="#" ><img src="./assets/linkedin.svg" alt="linkedin"/></a>
+              <a href="#" ><img src="./assets/instagram.svg" alt="instagram"/></a>
+              <a href="#" ><img src="./assets/facebook.svg" alt="facebook"/></a>
+              <a href="#" ><img src="./assets/twitter.svg" alt="twitter"/></a>
+            </li>
+            <li id="footer-capeb-flex">
+              <p>Par la</p>
+              <img src="./assets/capeb-footer.svg" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="sub-footer">
+      <p>CAPEB - Copyright 2020</p>
+  </div>
+  <!-- END FOOTER -->
+</body>
+</html>

@@ -1460,6 +1460,18 @@ a:hover .bloc-group-white {
   text-decoration: underline;
 }
 
+#parcours-bloc-aller > h3 {
+  color:#e6362d; 
+  margin-top: 48px; 
+  margin-bottom: 24px
+}
+
+#parcours-bloc-aller > h4 {
+  color: #222220; 
+  opacity: 0.75; 
+  line-height: 1.5;
+}
+
 
 
 /* .blocs-bat-flex-parcours div:nth-child(1), */

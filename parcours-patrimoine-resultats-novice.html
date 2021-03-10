@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- JAVASCRIPT-->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="capeb.js"></script>
     
     <!-- BOOTSTRAP-->
@@ -198,23 +200,23 @@
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="validationDefaultUsername">Mail *</label>
-            <input type="text" class="form-control mt-2" id="usermail" placeholder="Ex: maria.dupont@gmail.com" aria-describedby="inputGroupPrepend2" required>
+            <input type="email" class="form-control mt-2" id="usermail" placeholder="Ex: maria.dupont@gmail.com" aria-describedby="inputGroupPrepend2" required>
           </div>
           <div class="col-md-6 mb-3">
             <label for="validationDefault03">Numéro de téléphone *</label>
-            <input id="userphone_input" type="text" class="form-control mt-2" id="userphone" placeholder="Ex: 06 01 02 03 04" required>
+            <input type="tel" class="form-control mt-2" id="userphone" placeholder="Ex: 06 01 02 03 04" required>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6">
             <label for="validationDefault04">Numéro de département *</label>
-            <input type="text" class="form-control mt-2" id="userdept" placeholder="Ex: 92000" required>
+            <input type="number" class="form-control mt-2" id="userdept" placeholder="Ex: 92000" required>
           </div>
         </div>
         
         <div id="parcours-bloc-form-buttons">
           <div class="align-self-end">
-           <button id="button-contact-capeb" class="btn btn-primary"  type="submit" >Je veux contacter la CAPEB</button>
+           <button id="button-contact-capeb" class="btn btn-primary"  type="submit">Je veux contacter la CAPEB</button>
            <button  id="button-contact-form" class="btn btn-primary button-patrimoine" type="submit" disabled>Je veux être contacté</button>
           </div> 
         </div>
@@ -263,7 +265,7 @@
             Sélectionner une action à entreprendre
           </h3> 
           <div class="blocs-bat-flex-parcours" style="margin-top: 0px; margin-bottom: 30px " >
-            <div class="blocs-bat-flex-pics" >
+            <div class="blocs-bat-flex-pics parcours" >
               <a href="#">
                 <img class="bloc-group-color"  src="assets/group-orange.svg" alt="card1">
                 <img class="bloc-group-white"  src="assets/group-white.svg" alt="card2">
@@ -278,7 +280,7 @@
                 </div>
               </a>
             </div>
-            <div class="blocs-bat-flex-pics">
+            <div class="blocs-bat-flex-pics parcours">
               <a href="#">
                 <img class="bloc-group-color" src="assets/group-violet.svg" alt="card1">
                 <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
@@ -289,11 +291,13 @@
                 </div>
                 <div class='blocs-overlay violet-opacity'></div>
                 <div class="blocs-flex-image">
+
                   <img src="assets/parcours/action-modalites-pour-valoriser.jpg" alt>
+
                 </div>
               </a>
             </div>
-            <div class="blocs-bat-flex-pics">
+            <div class="blocs-bat-flex-pics parcours">
               <a href="#">
                 <img class="bloc-group-color" src="assets/group-orange.svg" alt="card1">
                 <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
@@ -304,7 +308,9 @@
                 </div>
                 <div class='blocs-overlay red-opacity'></div>
                 <div class="blocs-flex-image">
+
                   <img src="assets/parcours/action-point-actualites.jpg" alt>
+
                 </div>
               </a>
             </div>
@@ -329,7 +335,7 @@
             Sélectionner une action à entreprendre
           </h3> 
           <div class="blocs-bat-flex-parcours"  >
-            <div class="blocs-bat-flex-pics" >
+            <div class="blocs-bat-flex-pics parcours" >
               <a href="#">
                 <img class="bloc-group-color"  src="assets/group-orange.svg" alt="card1">
                 <img class="bloc-group-white"  src="assets/group-white.svg" alt="card2">
@@ -344,7 +350,7 @@
                 </div>
               </a>
             </div>
-            <div class="blocs-bat-flex-pics">
+            <div class="blocs-bat-flex-pics parcours">
               <a href="#">
                 <img class="bloc-group-color" src="assets/group-violet.svg" alt="card1">
                 <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
@@ -360,7 +366,7 @@
                 </div>
               </a>
             </div>
-            <div class="blocs-bat-flex-pics">
+            <div class="blocs-bat-flex-pics parcours">
               <a href="#">
                 <img class="bloc-group-color" src="assets/group-orange.svg" alt="card1">
                 <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
@@ -398,7 +404,7 @@
           </h3> 
 
           <div class="blocs-bat-flex-parcours">
-            <div class="blocs-bat-flex-pics" >
+            <div class="blocs-bat-flex-pics parcours" >
               <a href="#">
                 <img class="bloc-group-color"  src="assets/group-orange.svg" alt="card1">
                 <img class="bloc-group-white"  src="assets/group-white.svg" alt="card2">
@@ -413,7 +419,7 @@
                 </div>
               </a>
             </div>
-            <div class="blocs-bat-flex-pics">
+            <div class="blocs-bat-flex-pics parcours">
               <a href="#">
                 <img class="bloc-group-color" src="assets/group-violet.svg" alt="card1">
                 <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
@@ -428,7 +434,7 @@
                 </div>
               </a>
             </div>
-            <div class="blocs-bat-flex-pics">
+            <div class="blocs-bat-flex-pics parcours">
               <a href="#">
                 <img class="bloc-group-color" src="assets/group-orange.svg" alt="card1">
                 <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
@@ -464,7 +470,7 @@
             Sélectionner une action à entreprendre
           </h3> 
           <div class="blocs-bat-flex-parcours">
-            <div class="blocs-bat-flex-pics" >
+            <div class="blocs-bat-flex-pics parcours" >
               <a href="#">
                 <img class="bloc-group-color"  src="assets/group-orange.svg" alt="card1">
                 <img class="bloc-group-white"  src="assets/group-white.svg" alt="card2">
@@ -479,7 +485,7 @@
                 </div>
               </a>
             </div>
-            <div class="blocs-bat-flex-pics">
+            <div class="blocs-bat-flex-pics parcours">
               <a href="#">
                 <img class="bloc-group-color" src="assets/group-violet.svg" alt="card1">
                 <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
@@ -515,7 +521,7 @@
             Sélectionner une action à entreprendre
           </h3> 
           <div class="blocs-bat-flex-parcours">
-            <div class="blocs-bat-flex-pics" >
+            <div class="blocs-bat-flex-pics parcours" >
               <a href="#">
                 <img class="bloc-group-color"  src="assets/group-orange.svg" alt="card1">
                 <img class="bloc-group-white"  src="assets/group-white.svg" alt="card2">
@@ -531,7 +537,7 @@
                 </div>
               </a>
             </div>
-            <div class="blocs-bat-flex-pics">
+            <div class="blocs-bat-flex-pics parcours">
               <a href="#">
                 <img class="bloc-group-color" src="assets/group-violet.svg" alt="card1">
                 <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
@@ -546,7 +552,7 @@
                   <img src="assets/parcours/action-modalites-pour-valoriser.jpg" alt>
                 </div>
               </a>
-            </div>
+            </div> 
           </div>
           <!--END " IMAGES"-->
         </div>
@@ -568,7 +574,7 @@
             Sélectionner une action à entreprendre
           </h3> 
           <div class="blocs-bat-flex-parcours" >
-            <div class="blocs-bat-flex-pics" >
+            <div class="blocs-bat-flex-pics parcours" >
               <a href="#">
                 <img class="bloc-group-color"  src="assets/group-orange.svg" alt="card1">
                 <img class="bloc-group-white"  src="assets/group-white.svg" alt="card2">
@@ -582,13 +588,15 @@
                 </div>
                 <div class='blocs-overlay red-opacity'></div>
                 <div class="blocs-flex-image">
+
                   <img src="assets/parcours/action-modalites-pour-repondre.jpg" alt>
+
                 </div>
               </a>
             </div>
-            <div class="blocs-bat-flex-pics">
+            <div class="blocs-bat-flex-pics parcours">
               <a href="#">
-                <img class="bloc-group-color" src="assets/group-violet.svg" alt="card1">
+                <img class="bloc-group-color"  src="assets/group-violet.svg" alt="card1">
                 <img class="bloc-group-white" src="assets/group-white.svg" alt="card2">
                 <div class="blocs-bat-pics-title">
                   <div>
@@ -599,7 +607,9 @@
                 </div>
                 <div class='blocs-overlay violet-opacity'></div>
                 <div class="blocs-flex-image">
+
                   <img src="assets/parcours/action-modalites-pour-valoriser.jpg" alt>
+
                 </div>
               </a>
             </div>

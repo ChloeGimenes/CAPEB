@@ -39,15 +39,15 @@
 
 
   /* FORM CONTACT REMOVE DISABLE BUTTON*/
- 
-  $('#username, #userlastname, #usermail, #userphone, #userphone, #userdept').bind('keyup', function() {
-    if(allFilled()) $("#register").prop('disabled', false);
+  $('#username, #userlastname, #usermail, #userphone, #userdept').bind('keyup', function() {
+    if(allFilled()) $("#button-contact-form").removeAttr('disabled');
     });
 
     function allFilled() {
         var filled = true;
-        $('input').each(function() {
+        $('body input').each(function() {
             if($(this).val() == '') filled = false;
         });
         return filled;
     }
+

@@ -1310,12 +1310,35 @@ a:hover .bloc-group-white {
   display: flex; 
   position:relative; 
   flex-wrap: wrap;
-  justify-content: space-between; 
+  /* justify-content: space-between;  */
   /* margin-top: 26px; */
-
+  column-gap: 30px;
   margin-top: 0px; 
   margin-bottom: 30px;
 }
+
+/* BUTTONS */
+.btn:active, .btn:focus, .btn:hover , .btn::selection{
+  
+  /* background-color: inherit!important; */
+  outline: none !important;
+  box-shadow: none!important;
+
+
+}
+
+
+
+/* CHILDS CHANGING COLORS */
+
+.blocs-bat-flex-parcours > div:nth-child(odd) > a > img:first-child {
+
+  background-image: url('assets/group-orange.svg'); 
+}
+
+
+
+/* IMAGES */
 
 #parcours-results {
   margin-top: 48px;
@@ -1500,6 +1523,15 @@ a:hover .bloc-group-white {
   color: white;
 }
 
+.button-patrimoine::selection,
+.button-patrimoine:focus,
+.button-patrimoine:active {
+  border: solid 1px #e6362d!important;
+  background-color: #e6362d!important; 
+
+
+}
+
 .btn-primary:disabled, .btn-primary:hover {
   color: #fff;
   background-color: #e6362d;
@@ -1521,6 +1553,13 @@ a:hover .bloc-group-white {
   display:inline; 
   margin:0px; 
   margin-right: 16px;
+}
+
+#button-contact-capeb:focus,
+#button-contact-capeb::selection,
+  #button-contact-capeb:active {
+  border: solid 1px #e6362d!important;
+
 }
 
 
@@ -1547,16 +1586,89 @@ a:hover .red-opacity {
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 1260px) {
+
+ .parcours {
+   
+    width: 31%!important;
+  }  
+}
+
+@media only screen and (max-width: 940px) {
+
+  .parcours {
+    
+     width: 30%!important;
+   }  
+ }
+
+@media only screen and (max-width: 740px) {
+.parcours {
+    width: 100%!important;
+  }
+}
+
 /* FORM*/
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  
+  outline: none!important;
+  box-shadow: none!important;
+
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+  -webkit-box-shadow: 0 0 0 30px #f8f8fa inset !important;
+}
+
+/* REMOVE ARROWS  */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
 
 .form-control {
   padding: 16px 14px 16px 14px;
-
-  border: solid 1px #bdbdbd;
+  border: none;
+  border: solid 1px #ffffff;
   background-color: #f8f8fa;
   border-radius: 0px!important;
 }
 
+.form-control:focus, 
+.form-control::selection,
+.form-control:active {
+  background-color: #f8f8fa;
+  border: solid 1px #bdbdbd;
+
+  
+}
 
 
 /* ACCORDIONS */

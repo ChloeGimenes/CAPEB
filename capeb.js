@@ -34,8 +34,38 @@
   
 /* PAGE PARCOURS MATRIMOINE */
 
-  /* QUESTIONS RADIO BOXES */
-  $("form-check input:radio").change(function () {$("#button-patrimoine").prop("disabled", false);});
+  /* QUIZZ */
+  /* BORDER COLOR*/
+  
+    
+  /* REMOVE DISABLED BUTTON*/
+
+  //   let checkboxes = $("input[type='radio']"),
+  //   submitButt = $("input[type='submit']");
+
+  //   checkboxes.click(function() {
+  //   submitButt.attr("disabled", !checkboxes.is(":checked"));
+  // });
+
+  $(".form-check-input").on("change", function() {
+    checkedFunc("ilvadebloquer1", "ilvadebloquer2");
+  });
+  
+  function checkedFunc(element1Id, element2Id) {
+    var mybutton = document.getElementById("debloquemoi");
+    var element1 = document.getElementById(element1Id);
+    var element2 = document.getElementById(element2Id);
+    if (element1.checked == true && element2.checked == true) {
+      mybutton.class = "submit";
+      mybutton.removeAttribute("disabled");
+    } else {
+      mybutton.class = "button:disabled";
+      mybutton.setAttribute("disabled", "disabled");
+    }
+  }
+
+ 
+
 
 
   /* FORM CONTACT REMOVE DISABLE BUTTON*/

@@ -1216,7 +1216,7 @@ a:hover .bloc-group-white {
   margin: 0 0 8px; 
   padding: 17px 15px; 
   border-radius: 8px;
-  border: solid 1px #d8d8d8;
+  border: 1px solid #d8d8d8;
 }
 
 .form-check input:checked {
@@ -1224,17 +1224,35 @@ a:hover .bloc-group-white {
   background-color: white;
 }
 
-.form-check input:checked > .boot-border {
-  border-color: #602483!important;
+.form-check-input:checked[type=radio] {
+  background-image: url('./assets/parcours/ellipse1.svg') !important;
 }
 
+.form-check input:checked ~ .form-check-label {
+  color:rgb(0, 0, 0);
+  opacity: 1!important;
+}
+
+.form-check > input:checked .form-check {
+
+border: 1px solid #e22312!important;
+opacity: 1!important;
+
+}
+
+
+
 .form-check .form-check-input {
-  margin-left: 0px!important
+  margin-left: 0px!important;
+
+  width: 17px!important;
+  height: 16px!important;
 }
 
 .form-check .form-check-label {
   margin-left: 18px;
 }
+
 
 .btn-primary:focus, .btn:focus, .btn:active , .btn-primary:active, a:focus
 {
@@ -1330,10 +1348,13 @@ a:hover .bloc-group-white {
 
 
 /* CHILDS CHANGING COLORS */
+.blocs-bat-flex-parcours > div:nth-child(odd) {
+  /* border: 2px solid orange */
+}
 
-.blocs-bat-flex-parcours > div:nth-child(odd) > a > img:first-child {
+.blocs-bat-flex-parcours > div:nth-child(odd) > a > div:nth-child(2):hover {
+ 
 
-  background-image: url('assets/group-orange.svg'); 
 }
 
 
@@ -1372,7 +1393,7 @@ a:hover .bloc-group-white {
   height: 306px; 
   bottom: 0; 
   left: 0; 
-  background-image: url('./assets/actus/Rectangle\ 29.png');
+  background-color: #e6362d;;
 }
 
 #parcours-results-bloc-text {
@@ -1629,6 +1650,7 @@ input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
+input[type="radio"]:focus,
 .uneditable-input:focus {   
   
   outline: none!important;

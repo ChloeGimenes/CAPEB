@@ -1426,16 +1426,6 @@ opacity: 1!important;
   margin-top: 0px
 }
 
-#parcours-results-main > h2 {
-
-  margin-top: 104px
-}
-
-/* a {
-  text-decoration: none; 
-  color: inherit!important; 
-} */
-
 #parcours-results-main > a > h4 {
   margin-top:32px;
   color: #222220!important;
@@ -1446,6 +1436,10 @@ opacity: 1!important;
 #parcours-results-main > h2 {
   margin-top: 104px; 
   margin-bottom: 48px;
+}
+
+#parcours-results-main h2:first-of-type {
+  margin-bottom: 30px!important;
 }
 
 #parcours-bloc-form {

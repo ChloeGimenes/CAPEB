@@ -75,7 +75,7 @@
 
     function allFilled() {
         var filled = true;
-        $('body input').each(function() {
+        $('#mon-parcours-form input').each(function() {
             if($(this).val() == '') filled = false;
         });
         return filled;

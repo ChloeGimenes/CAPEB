@@ -220,7 +220,7 @@ a{
 .header-active #menu-line-short {
   border-bottom: 2px solid #e6362d; 
   width: 20px; 
-  margin-top: 6px!important;
+  margin-top: 11px!important;
   display: block!important
 }
 
@@ -1193,6 +1193,8 @@ a:hover .bloc-group-white {
   color:#602483; 
   opacity: 0.75; 
   line-height: 1.6;
+
+  margin: 0px;
 }
 
 #parcours-bloc-violet > h5 > a {
@@ -1208,6 +1210,7 @@ a:hover .bloc-group-white {
 .form-check-label {
   color: black;
   opacity: 0.4;
+  margin-left: 36px!important;
 }
 
 .form-check {
@@ -1217,6 +1220,7 @@ a:hover .bloc-group-white {
   padding: 17px 15px; 
   border-radius: 8px;
   border: 1px solid #d8d8d8;
+  cursor: pointer;
 }
 
 .form-check input:checked {
@@ -1239,7 +1243,6 @@ border: 1px solid #e22312!important;
 opacity: 1!important;
 
 }
-
 
 
 .form-check .form-check-input {
@@ -1458,6 +1461,8 @@ opacity: 1!important;
   color:#602483; 
   opacity: 0.75; 
   line-height: 1.6;
+
+  margin: 0px;
 }
 
 #parcours-bloc-form-violet > h5 > a {
@@ -1491,6 +1496,8 @@ opacity: 1!important;
   color:#602483; 
   opacity: 0.75; 
   line-height: 1.6;
+
+  margin: 0px;
 }
 
 #parcours-bloc-aller > div > h5 > a {
@@ -1746,3 +1753,533 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
 }
+
+
+/* LES MARCHES ////////////////////////////////////////////////////////////////////////*/
+
+#les-marches-main {
+
+  max-width:1110px; 
+  margin-top: 140px; 
+  margin-right: auto; 
+  margin-left: auto;
+}
+
+#les-marches-main > h1 {
+  margin-top: 40px; 
+  margin-bottom: 56px;
+}
+
+#les-marches-main > h2 {
+  margin-top: 104px; 
+  margin-bottom: 48px;
+}
+
+#les-marches-bloc {
+  margin-top: 48px;
+  box-shadow: 0 4px 15px 0 rgba(131, 131, 131, 0.2);
+  padding: 40px;
+}
+
+.les-marches-bloc-image {
+  position: relative;
+  width: 310px;
+  height: 321px;
+}
+
+.les-marches-bloc-image > div{
+  position: absolute;
+    width: 295px;
+    height: 306px;
+    bottom: 0;
+    left: 0;
+    background-color: #e6362d;
+}
+
+.les-marches-bloc-image > img {
+  z-index: 10;
+    position: absolute;
+    width: 295px;
+    height: 306px;
+    top: 0;
+    right: 0;
+    background-color: white;
+  
+}
+
+.les-marches-bloc-text {
+  padding: 0px 0px 0px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.les-marches-bloc-text > div > h4 {
+  opacity: 0.75;
+  line-height: 1.5;
+  margin-top: 24px;
+}
+
+.les-marches-bloc-text > div > h4:nth-child(3) {
+ font-weight: bold;
+}
+
+.les-marches-bloc-text > div > h3 {
+  color:#e6362d;
+}
+
+.les-marches-flex {
+  display: flex;
+}
+
+.second {
+  display: flex; 
+  align-items: center;
+}
+
+#les-marches-bloc hr {
+  margin-top: 40px; 
+  margin-bottom: 40px;
+}
+
+.second-text {
+  padding: 0px 45px 0px 0px;
+}
+
+
+.les-marches-accordions {
+  box-shadow: 0 4px 15px 0 rgba(131, 131, 131, 0.2); 
+  margin-bottom: 20px;
+}
+
+
+.les-marches-accordion-button {
+  border: none;
+  padding: 40px 40px 40px 40px;
+}
+
+.les-marches-accordion-button > h4 > span {
+  color:#e6362d; 
+  font-weight: bold;
+}
+
+.les-marches-accordion-button:focus {
+  border: none!important;
+}
+
+.les-marches-accordion-button:after {
+  background-image: url('./assets/marches/arrow-down-FAQ.svg');
+}
+
+.les-marches-accordion-button:not(.collapsed)::after {
+  background-image: url('./assets/marches/arrow-down-FAQ.svg');
+}
+
+.les-marches-accordion-body {
+  padding: 16px 40px 40px 40px!important;
+  opacity: 0.75;
+}
+
+.les-marches-accordion-body > h4 {
+  line-height: 1.5;
+}
+
+.les-marches-accordion-body > h4 > a {
+  color: #e6362d!important;
+}
+
+#marche-bloc-map {
+  margin-top: 48px;
+}
+
+#marches-bloc-map-first {
+  display: flex; 
+  width: 100%;
+}
+
+#picto-ileDeFrance {
+  z-index: 20; 
+  position: absolute; 
+  top: 26px; 
+  left: 245px; 
+  opacity: 0.75; 
+  cursor: pointer;
+}
+
+#picto-normandie {
+  z-index: 10; 
+  position: absolute; 
+  top: 51px; 
+  left: 7px; 
+  opacity: 0.75; 
+  cursor: pointer;
+}
+
+#picto-bretagne {
+  z-index: 19; 
+  position: absolute; 
+  top: 8px; 
+  left: 122px; 
+  opacity: 0.75; 
+  cursor: pointer;
+}
+
+#picto-nord {
+  z-index: 13; 
+  position: absolute; 
+  top: -28px; 
+  left: 231px; 
+  opacity: 0.75; 
+  cursor: pointer;
+}
+
+#picto-grandest {
+  z-index: 14; 
+  position: absolute; 
+  top: 10px; 
+  left: 340px; 
+  opacity: 0.75; 
+  cursor:pointer;
+}
+
+#picto-bourgogne {
+  z-index: 14; 
+  position: absolute; 
+  top: 119px; 
+  left: 299px; 
+  opacity: 0.75; 
+  cursor: pointer;
+}
+
+#picto-auvergne {
+  z-index: 14; 
+  position: absolute; 
+  top: 193px; 
+  left: 260px; 
+  opacity: 0.75; 
+  cursor: pointer;
+}
+
+#picto-cote-dazure {
+  z-index: 14; 
+  position: absolute; 
+  top: 287px; 
+  left: 321px; 
+  opacity: 0.75; 
+  cursor: pointer;
+}
+
+#picto-occitanie {
+  z-index: 14; 
+  position: absolute; 
+  top: 321px; 
+  left: 204px; 
+  opacity: 0.75; 
+  cursor: pointer;
+}
+
+#picto-aquitaine {
+  z-index: 14; 
+  position: absolute; 
+  top: 259px; 
+  left: 109px; 
+  opacity: 0.75; 
+  cursor: pointer;
+}
+
+#picto-centre {
+  z-index: 24; 
+  position: absolute; 
+  top: 119px; 
+  left: 200px; 
+  opacity: 0.75; 
+  cursor: pointer;
+}
+
+#picto-loire {
+  z-index: 24; 
+  position: absolute; 
+  top: 124px; 
+  left: 104px; 
+  opacity: 0.75; 
+  cursor: pointer; 
+}
+
+.picto-bloc {
+  position: relative;
+}
+
+.picto-bloc > img {
+  margin-bottom: -18px; 
+  margin-left: 19px;
+}
+
+.picto-bloc-infos {
+  height: 34px;
+}
+
+.show-region {
+  display: none;
+}
+
+.show-region > h3 {
+  color: #e6362d;
+}
+
+.marches-bloc-violet {
+  margin-bottom: 40px;
+  padding: 40px 10px 40px 16px;
+  background-color: rgba(96, 36, 131, 0.04);
+  border-left: 4px solid #602483;
+}
+
+.marches-bloc-violet > h5 {
+  color: #602483;
+  opacity: 0.75;
+  line-height: 1.6;
+  margin: 0px;
+}
+
+.marches-bloc-violet > h5 > a {
+    color:#602483; 
+    text-decoration: underline;
+}
+
+.marches-text-chantier > h3 {
+  color:#e6362d; 
+  margin-bottom: 24px;
+}
+
+.marches-text-chantier > h4 {
+  line-height: 1.5; 
+  opacity: 0.75 ;
+}
+
+#marches-bloc-image {
+  position: relative;
+}
+
+#marches-bloc-image > img {
+  z-index: 0; 
+  position: relative;
+}
+
+#marche-bloc-map-flex {
+  display: flex;
+  box-shadow: 0 4px 15px 0 rgba(131, 131, 131, 0.2);
+  padding: 40px;
+}
+
+#marche-bloc-image > div:first-of-type {
+  z-index: 10;
+    width: 295px;
+    height: 306px;
+    bottom: 0;
+    left: 0;
+}
+
+.up:hover {
+  z-index: 100!important;
+  opacity: 1!important;
+}
+
+#marche-map-bloc-text {
+    padding: 0px 0px 0px 30px; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;
+  }
+
+.opacity {
+
+  opacity: 1!important;
+  z-index: 100!important;
+}
+
+/* CARDS */
+
+#marches-cards {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between;
+}
+
+#marches-cards > div:first-child > div:nth-child(2) {
+  position:absolute;
+  width: 100px; 
+  height: 100px; 
+  bottom: 0; 
+  left: -15px; 
+  background-color: #e6362d;
+}
+
+#marches-cards > div:nth-child(2) > div:nth-child(2) {
+  position:absolute;
+  width: 100px; 
+  height: 100px; 
+  bottom: 0; 
+  left: -15px; 
+  background-color: #602483;
+}
+
+#marches-cards > div:nth-child(3) > div:nth-child(2) {
+  position:absolute;
+  width: 100px; 
+  height: 100px; 
+  bottom: 0; 
+  left: -15px; 
+  background-color: #602483;
+}
+
+#marches-cards > div:nth-child(4) > div:nth-child(2) {
+  position:absolute;
+  width: 100px; 
+  height: 100px; 
+  bottom: 0; 
+  left: -15px; 
+  background-color: #e6362d;
+}
+
+#marches-cards > div:nth-child(5) > div:nth-child(2) {
+  position:absolute;
+  width: 100px; 
+  height: 100px; 
+  bottom: 0; 
+  left: -15px; 
+  background-color: #e6362d;
+}
+
+#marches-cards > div:nth-child(6) > div:nth-child(2) {
+  position:absolute;
+  width: 100px; 
+  height: 100px; 
+  bottom: 0; 
+  left: -15px; 
+  background-color: #602483;
+}
+
+#marches-cards > div:nth-child(7) > div:nth-child(2) {
+  position:absolute;
+  width: 100px; 
+  height: 100px; 
+  bottom: 0; 
+  left: -15px; 
+  background-color: #602483;
+}
+
+#marches-cards > div:nth-child(8) > div:nth-child(2) {
+  position:absolute;
+  width: 100px; 
+  height: 100px; 
+  bottom: 0; 
+  left: -15px; 
+  background-color: #e6362d;
+}
+
+.changing-color {
+  position: relative; 
+  width: 540px;height: 
+  210px; margin-top: 30px;
+}
+
+.changing-color-card {
+  z-index: 10;
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  top: 0; 
+  left: 0;
+}
+
+.changing-card {
+  background-color: rgb(255, 255, 255); 
+  height: 195px; 
+  width: 540px;  
+  box-shadow: 0 4px 15px 0 rgba(131, 131, 131, 0.2);
+}
+
+.changing-card-content {
+  display: flex; 
+  flex-direction: column; 
+  padding: 24px; height: 100%;
+}
+
+.changing-card-content-question {
+  flex: 1;
+}
+
+.changing-card-content-flex > h3 {
+  margin: 0px!important; 
+  margin-bottom: 10px!important;
+}
+  
+.changing-card-content-link > a {
+  text-decoration: none;
+}
+
+.changing-card-content-link-flex {
+  display: flex; 
+  align-items: center;
+}
+
+.changing-card-content-link-flex > h5 {
+  padding-left:24px; 
+  color: #e6362d; 
+  margin-bottom: 0px;
+}
+
+#marches-contact {
+  margin-top: 48px;
+
+  box-shadow: 0 4px 15px 0 rgba(131, 131, 131, 0.2);
+    padding: 40px;
+}
+
+#marches-bloc-violet-contact {
+  margin-bottom: 40px;
+  padding: 40px 10px 40px 16px;
+  background-color: rgba(96, 36, 131, 0.04);
+  border-left: 4px solid #602483;
+}
+
+#marches-bloc-violet-contact > h5 {
+  font-size: 22px;
+  color: #602483;
+  opacity: 0.75;
+  margin: 0px;
+}
+
+#marches-contact > input {
+  width: 301px;
+  height: 53px; 
+  padding: 12px 16px; 
+  border: solid 1px #e6362d; 
+  background-color: #e6362d; 
+  color: white; 
+  font-weight: bold;
+  font-size: 18px; 
+  display: block; 
+  margin-right: 0px; 
+  margin-left: auto; 
+  margin-bottom: 0px;
+}
+  
+
+@media (max-width: 1200px) {
+  #les-marches-main {
+      margin-left: 40px!important;
+      margin-right: 40px!important;
+    }
+  }
+  
+  @media (max-width: 620px) {
+    #les-marches-main {
+        margin-left: 20px!important;
+        margin-right: 20px!important;
+    }
+  }
+
+  .accordion-line {
+    padding-left: 40px; 
+    padding-right:40px;
+  }

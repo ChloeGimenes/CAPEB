@@ -1,3 +1,12 @@
+/*
+Theme Name: Capeb
+Theme URI: https://kanbios.fr/
+Author: KANBIOS
+Author URI: https://kanbios.fr/
+Description: Theme CAPEB
+*/
+
+
 * { box-sizing: border-box; }
 
 html {
@@ -1279,9 +1288,34 @@ opacity: 1!important;
       margin-right: 20px!important;
   }
 
+  #parcours-main-quizz button {
+    margin-top: 60px!important; 
+   
+  }
+
+  .align-self-end {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+
+  #parcours-button-contact,
+  #parcours-button-becontacted {
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+
+  #parcours-button-becontacted {
+    margin-top: 16px;
+    margin-bottom: 20px!important;
+  }
+
   .button-patrimoine {
     margin-left: auto!important;
     margin-right: auto!important;
+    margin-top: 20px!important;
+    margin-bottom: 20px!important;
   }
 
   #button-contact-form {
@@ -1294,23 +1328,13 @@ opacity: 1!important;
 
   #parcours-bloc-form, 
   #parcours-bloc-aller, 
-  #parcours-bloc-results {
-    padding: 10px!important;
+  #parcours-bloc-results,
+  #parcours-results-bloc {
+    padding: 20px 10px 20px 10px!important;
   }
 
 }
 
-@media (max-width: 375px) {
-  
-  #parcours-bloc-aller{
-    padding: 0px!important
-  }
-
-  #parcours-results-bloc, #parcours-bloc-form {
-    padding: 0px!important;
-    box-shadow: none!important;
-  }
-}
 
 /* PAGE RESULTS */
 
@@ -1339,27 +1363,47 @@ opacity: 1!important;
 }
 
 /* BUTTONS */
-.btn:active, .btn:focus, .btn:hover , .btn::selection{
+.btn:active, .btn:focus, .btn:hover , .btn::selection, 
+#parcours-button-contact,
+#parcours-button-becontacted {
   
   /* background-color: inherit!important; */
   outline: none !important;
   box-shadow: none!important;
-
-
 }
 
+/* IMAGES CHANGING COLORS */
 
-
-/* CHILDS CHANGING COLORS */
-.blocs-bat-flex-parcours > div:nth-child(odd) {
-  /* border: 2px solid orange */
+.blocs-bat-flex-parcours > div:nth-child(even) > a > div.test-group {
+  background-image: url("assets/group-violet.svg")!important;
 }
 
-.blocs-bat-flex-parcours > div:nth-child(odd) > a > div:nth-child(2):hover {
- 
-
+.blocs-bat-flex-parcours > div:nth-child(even) > a:hover .changing-opacity {
+  background: #602483!important;
 }
 
+.test-group {
+  position: absolute;
+  z-index: 2;
+  width: 64px;
+  height: 64px;
+  bottom: 0;
+  left:0;
+  background-image: url("assets/group-orange.svg");
+}
+
+a:hover .changing-opacity {
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  position: absolute;
+  z-index: 1;
+  background: #e6362d!important;
+}
+
+a:hover .test-group {
+   display: none;
+  }
 
 
 /* IMAGES */
@@ -1517,19 +1561,14 @@ opacity: 1!important;
   line-height: 1.5;
 }
 
-
-
-/* .blocs-bat-flex-parcours div:nth-child(1), */
-/* .blocs-bat-flex-parcours {
-
-    margin-right: 30px!important
-} */
-
 .blocs-bat-pics-title > div > p {
   line-height: 1.2;
 }
 
 .button-patrimoine {
+  display: grid;
+  justify-items: center;
+  align-items: center;
   width:197px; 
   height: 53px; 
   background-color: #e6362d; 
@@ -1538,7 +1577,6 @@ opacity: 1!important;
   border-radius: 0px; 
   border: solid 1px #e6362d!important; 
   margin-top: 40px; 
-  display: block; 
   margin-right: 0px; 
   margin-left: auto;
   margin-bottom: 0px;
@@ -1550,8 +1588,6 @@ opacity: 1!important;
 .button-patrimoine:active {
   border: solid 1px #e6362d!important;
   background-color: #e6362d!important; 
-
-
 }
 
 .btn-primary:disabled, .btn-primary:hover {
@@ -1560,31 +1596,33 @@ opacity: 1!important;
   border-color: #e6362d;
 }
 
-#button-contact-capeb {
+#parcours-button-contact {
   width: 232px;
   height: 53px;
-  margin: 40px 16px 0 81px;
-  /* padding: 12px 16px; */
-  border: solid 1px #e6362d;
-  background-color: white;
-  font-size: 18px; 
-  font-weight:bold;
-  border-radius: 0px; 
-  color: #e6362d;
-
-  display:inline; 
-  margin:0px; 
-  margin-right: 16px;
-}
-
-#button-contact-capeb:focus,
-#button-contact-capeb::selection,
-  #button-contact-capeb:active {
+  background-color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 0px;
   border: solid 1px #e6362d!important;
-
+  margin-right: 16px;
+  margin-left: auto;
+  margin-bottom: 0px;
+  color: #e6362d;
 }
 
-
+#parcours-button-becontacted {
+  width: 201px;
+  height: 53px;
+  background-color: #e6362d;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 0px;
+  border: solid 1px #e6362d!important;
+  margin-right: 0px;
+  margin-left: auto;
+  margin-bottom: 0px;
+  color: white;
+}
 
 a:hover .violet-opacity {
   height: 100%;
@@ -1619,14 +1657,32 @@ a:hover .red-opacity {
 @media only screen and (max-width: 940px) {
 
   .parcours {
-    
      width: 30%!important;
    }  
+  
+   .blocs-bat-pics-title > div > p {
+     font-size: 20px;
+   }
  }
 
 @media only screen and (max-width: 740px) {
-.parcours {
-    width: 100%!important;
+  .parcours {
+      width: 100%!important;
+    }
+
+  #parcours-results-bloc-image {
+    width: 212px;
+    height: 218px;
+  }
+
+  #parcours-results-bloc-image > img {
+    width: auto;
+    height: 206px!important;
+  }
+
+  #parcours-results-bloc-image > div {
+    height: 206px;
+    width: 200px;
   }
 }
 
@@ -1746,6 +1802,7 @@ input[type=number]::-webkit-outer-spin-button {
 
   #parcours-results-bloc {
     flex-direction: column;
+
   }
 
   #parcours-results-bloc-text {
@@ -1798,20 +1855,20 @@ input[type=number]::-webkit-outer-spin-button {
 
 .les-marches-bloc-image > img {
   z-index: 10;
-    position: absolute;
-    width: 295px;
-    height: 306px;
-    top: 0;
-    right: 0;
-    background-color: white;
+  position: absolute;
+  width: 295px;
+  height: 306px;
+  top: 0;
+  right: 0;
+  background-color: white;
   
 }
 
 .les-marches-bloc-text {
   padding: 0px 0px 0px 30px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .les-marches-bloc-text > div > h4 {
@@ -1822,10 +1879,16 @@ input[type=number]::-webkit-outer-spin-button {
 
 .les-marches-bloc-text > div > h4:nth-child(3) {
  font-weight: bold;
+ margin-bottom: 0px;
 }
 
 .les-marches-bloc-text > div > h3 {
   color:#e6362d;
+}
+
+.accordion-line {
+  padding-left: 40px; 
+  padding-right:40px;
 }
 
 .les-marches-flex {
@@ -2178,8 +2241,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 .changing-color {
   position: relative; 
-  width: 540px;height: 
-  210px; margin-top: 30px;
+  width: 540px;
+  height: 210px; 
+  margin-bottom: 30px;
 }
 
 .changing-color-card {
@@ -2249,10 +2313,9 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0px;
 }
 
-#marches-contact > input {
+#marches-contact > button {
   width: 301px;
   height: 53px; 
-  padding: 12px 16px; 
   border: solid 1px #e6362d; 
   background-color: #e6362d; 
   color: white; 
@@ -2263,6 +2326,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin-left: auto; 
   margin-bottom: 0px;
 }
+
   
 
 @media (max-width: 1200px) {
@@ -2272,14 +2336,207 @@ input[type=number]::-webkit-outer-spin-button {
     }
   }
   
-  @media (max-width: 620px) {
-    #les-marches-main {
-        margin-left: 20px!important;
-        margin-right: 20px!important;
+@media (max-width: 1178px) {
+
+  #marches-cards {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
+@media (max-width: 970px) {
+  #marches-bloc-map-first {
+    flex-direction: column;
+    align-items: center;
     }
   }
 
-  .accordion-line {
-    padding-left: 40px; 
-    padding-right:40px;
+@media (max-width: 800px) {
+.les-marches-flex {
+    flex-direction: column;
+    }
+
+  .second {
+    flex-direction: column-reverse!important;
+    align-items: inherit;
   }
+
+  .les-marches-bloc-text {
+    padding: 30px 0px 0px 0px;
+  }
+
+  .second-text {
+    padding: 30px 0px 0px 0px!important;
+  }
+
+  }
+
+@media (max-width: 620px) {
+
+  #les-marches-main {
+      margin-left: 20px!important;
+      margin-right: 20px!important;
+  }
+  .changing-color {
+    width: 100%!important;
+  }
+  .changing-card {
+    width: 100%!important;
+  }
+  .les-marches-accordion-button {
+    padding: 20px 10px 20px 10px;
+  }
+  .les-marches-accordion-body,
+  .les-marches-accordion-button,
+  #marche-map-bloc-text,
+  #marches-contact,
+  #les-marches-bloc,
+  #marches-bloc-image > img {
+    padding: 20px 10px 20px 10px!important;
+  }
+}
+
+
+
+@media (max-width: 570px) {
+  #marches-bloc-image > img {
+    width: 100%;
+  }
+  .picto-bloc > img {
+    width: 50px!important;
+  margin-left: 11px!important;
+  }
+  .show-region > h3 {
+    font-size: 16px!important;
+  }
+  .picto-bloc > img::selection {
+  width: 50px!important;
+  }
+  .picto-pointer > img {
+    width: 22px;
+  }
+  #marche-bloc-map-flex {
+    padding: 0px;
+  }
+  #picto-ileDeFrance {
+    top: 9%;
+    left: 47%;
+  }
+  #picto-normandie {
+    top: 14%;
+    left: 9%;
+  }
+  #picto-bretagne {
+    top: 7%;
+    left: 27%;
+  }
+  #picto-nord {
+    top: -3%;
+    left: 52%;
+  }
+  #picto-grandest {
+    top: 9%;
+    left: 62%;
+  }
+  #picto-bourgogne {
+    top: 26%;
+    left: 61%;
+  }
+  #picto-centre {
+    top: 26%;
+    left: 41%;
+  }
+  #picto-loire {
+    top: 26%;
+    left: 22%;
+  }
+  #picto-auvergne {
+    top: 40%;
+    left: 56%;
+  }
+  #picto-cote-dazure {
+    top: 62%;
+    left: 69%;
+  }
+  #picto-aquitaine {
+    top: 50%;
+    left: 28%;
+  }
+  #picto-occitanie {
+    top: 61%;
+    left: 44%;
+  }
+
+}
+
+
+  @media (max-width: 400px) { 
+
+  #picto-ileDeFrance {
+    top: 4%;
+    left: 47%;
+  }
+  #picto-normandie {
+    top: 14%;
+    left: 9%;
+  }
+  #picto-bretagne {
+    top: 7%;
+    left: 27%;
+  }
+  #picto-nord {
+    top: -6%;
+    left: 52%;
+  }
+  #picto-grandest {
+    top: 7%;
+    left: 62%;
+  }
+  #picto-bourgogne {
+    top: 23%;
+    left: 61%;
+  }
+  #picto-centre {
+    top: 22%;
+    left: 41%;
+  }
+  #picto-loire {
+    top: 23%;
+    left: 22%;
+  }
+  #picto-auvergne {
+    top: 38%;
+    left: 56%;
+  }
+  #picto-cote-dazure {
+    top: 57%;
+    left: 69%;
+  }
+  #picto-aquitaine {
+    top: 50%;
+    left: 23%;
+  }
+  #picto-occitanie {
+    top: 61%;
+    left: 44%;
+  }
+  .les-marches-bloc-image {
+  width: 212px;
+  height: 218px;
+  }
+  .les-marches-bloc-image > img {
+    width: auto;
+    height: 206px!important;
+  }
+  .les-marches-bloc-image > div {
+    height: 206px;
+    width: 200px;
+  }
+  #marches-contact > button {
+    width: 100%;
+    height: 68px;
+  }
+}
+
+
+ 

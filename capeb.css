@@ -2601,8 +2601,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .cip-bloc-text > p,
-  ul,
-  blockquote {
+.cip-bloc-text > ul,
+.cip-bloc-text > blockquote {
   opacity: 0.75;
   line-height: 1.5;
   margin-bottom: 12px;
@@ -2659,15 +2659,15 @@ input[type=number]::-webkit-outer-spin-button {
   width: 50%;
 }
 
-#cip-third-search {
+.cip-third-search {
   margin-bottom: 45px;
 }
 
-#cip-third-search > input {
+.cip-third-search > input {
   height: 53px;
 } 
 
-#cip-third-search > button {
+.cip-third-search > button {
 height: 53px!important;
 width: 114px!important;
 border-radius: 0px!important;
@@ -2786,14 +2786,172 @@ font-size: 18px;
 }
 
 @media (max-width: 620px) {
-    #cip-main {
-    margin-left: 20px!important;
-    margin-right: 20px!important;
+  #cip-main {
+  margin-left: 20px!important;
+  margin-right: 20px!important;
  }
 
  #cip-bloc ,
  #cip-bloc-second,
  #cip-bloc-third {
    padding: 20px 10px 20px 10px;
+ }
+}
+
+@media (max-width: 350px) {
+  #cip-title {
+    gap: 0px;
+  }
+}
+
+/* PAGE CONTACTS & ANNUAIRES //////////////////////////////////////////////////////////////////////*/
+
+#annuaires-main {
+  max-width: 1110px;
+  margin-top: 140px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#annuaires-main > h1 {
+  margin-top: 40px;
+  margin-bottom: 56px;
+}
+
+#annuaires-main > h2 {
+  margin-top: 104px;
+    margin-bottom: 48px;
+}
+
+#annuaires-bloc {
+  box-shadow: 0 4px 15px 0 rgba(131, 131, 131, 0.2);
+  padding: 40px;
+}
+
+#annuaires-bloc > div.annuaires-bloc-violet {
+  margin-bottom: 48px ;
+}
+
+#annuaires-bloc > p:first-of-type {
+  font-size: 18px;
+  margin-bottom: 16px ;
+}
+
+
+
+
+.annuaires-bloc-violet {
+  padding: 26px 0px 26px 16px;
+  background-color: rgba(96, 36, 131, 0.04);
+  border-left: 4px solid #602483;
+}
+
+.annuaires-bloc-violet > h5 {
+  color: #602483;
+  opacity: 0.75;
+  line-height: 1.6;
+  margin: 0px;
+}
+
+.annuaires-bloc-violet > h5 > a {
+  color: #602483;
+  text-decoration: underline;
+}
+
+#annuaires-button {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 197px;
+  height: 53px;
+  background-color: #e6362d;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 0px;
+  border: solid 1px #e6362d!important;
+  margin-top: 40px;
+  margin-right: 0px;
+  margin-left: auto;
+  margin-bottom: 0px;
+  color: white;
+  text-decoration: none;
+}
+
+#annuaires-bloc-infos > h3 {
+  margin-top: 43px;
+  color: #e6362d;
+}
+
+#annuaires-bloc-infos > h4 {
+  font-weight: bold;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+#annuaires-bloc-infos > p {
+  font-size: 18px;
+  opacity: 0.75;
+  margin-bottom: 10px!important;
+}
+
+#annuaires-bloc-infos > p > a {
+  color: #222220;
+}
+
+#annuaires-bloc-infos > p > span {
+  color: #e6362d;
+  opacity: 0.75;
+  font-weight: bold;
+}
+
+#annuaires-partenaires {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 30px;
+}
+
+.bloc-partenaires {
+  height: 204px; 
+  width: 255px; 
+  padding: 40px; 
+  box-shadow: 0 4px 15px 0 rgba(131, 131, 131, 0.2);
+}
+
+#annuaires-contact {
+  margin-top: 48px;
+  box-shadow: 0 4px 15px 0 rgba(131, 131, 131, 0.2);
+  padding: 40px;
+}
+
+@media (max-width: 1200px) {
+
+  #annuaires-main {
+    margin-left: 40px!important;
+    margin-right: 40px!important;
+  }
+} 
+
+@media (max-width: 1190px) {
+  #annuaires-partenaires {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 620px) {
+  #annuaires-main {
+  margin-left: 20px!important;
+  margin-right: 20px!important;
+ }
+
+ #annuaires-bloc ,
+ #annuaires-contact,
+ #cip-bloc-third {
+   padding: 20px 10px 20px 10px;
+ }
+
+ #annuaires-button {
+    margin-left: auto!important;
+    margin-right: auto!important;
+    /* margin-top: 20px!important; */
+    /* margin-bottom: 20px!important */
  }
 }

@@ -220,21 +220,21 @@ a{
   top: 0;
 }
 
-.header-active span {
+.current_page_item span {
   border-bottom: 2px solid #e6362d; 
   width: 20px; 
   margin-top: 17px;
   display: block!important
 }
 
-.header-active #menu-line-short {
+.current_page_item #menu-line-short {
   border-bottom: 2px solid #e6362d; 
   width: 20px; 
   margin-top: 11px!important;
   display: block!important
 }
 
-.header-active a {
+.current_page_item a {
   font-weight: bold;
   color: #101010!important;
   opacity: 1!important;
@@ -2673,7 +2673,7 @@ input[type=number]::-webkit-outer-spin-button {
 .cip-third-search > form {
   width: 100%;
   display: flex;
-  
+
 }
 
 .cip-third-search > form > input {

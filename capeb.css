@@ -2419,8 +2419,9 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
   }
   .picto-bloc > img {
+    height: auto;
     width: 50px!important;
-  margin-left: 11px!important;
+    margin-left: 11px!important;
   }
   .show-region > h3 {
     font-size: 16px!important;
@@ -2971,3 +2972,6 @@ font-size: 18px;
     /* margin-bottom: 20px!important */
  }
 }
+
+/* ARROW BACK TO TOP*/
+

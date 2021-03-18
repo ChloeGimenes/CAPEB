@@ -1065,6 +1065,13 @@ a:hover .bloc-group-white {
     color:#222200!important
   }
 
+  /* ACTUS */
+
+  #actus-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
   /* PAGINATION */
 
@@ -2663,11 +2670,17 @@ input[type=number]::-webkit-outer-spin-button {
   margin-bottom: 45px;
 }
 
-.cip-third-search > input {
+.cip-third-search > form {
+  width: 100%;
+  display: flex;
+  
+}
+
+.cip-third-search > form > input {
   height: 53px;
 } 
 
-.cip-third-search > button {
+.cip-third-search > form > button {
 height: 53px!important;
 width: 114px!important;
 border-radius: 0px!important;

@@ -4,9 +4,13 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <!--- EVENT CALENDAR -->
+    <!-- <link href="./eventcalendar.css" rel="stylesheet" type="text/css"> -->
+
       <!-- JAVASCRIPT-->
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-      <script src="capeb.js"></script>
+      <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+      <script src="capeb.js"></script> -->
 
       
       <!-- FLICKETY-->
@@ -18,8 +22,8 @@
       <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.css' rel='stylesheet' />
       <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.js'></script>
 
-      <link href='fullcalendar/main.css' rel='stylesheet' />
-      <script src='fullcalendar/main.js'></script>
+      <!-- <link href='fullcalendar/main.css' rel='stylesheet' />
+      <script src='fullcalendar/main.js'></script> -->
 
       <!-- BOOTSTRAP-->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -37,7 +41,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
       <![endif]-->
 
-      <title>CAPEB-Actualités-Page1</title>
+      <title>CAPEB-Actualités</title>
   </head>
 
   <body>
@@ -77,553 +81,376 @@
   <!-- END NAVBAR -->
     
 
-    <div id="actu-main" style="max-width:1110px; margin-top: 140px; margin-right: auto; margin-left: auto; ">
+    <div id="actus-main">
 
       <!-- BREADCRUMB-->
-      
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Library</li>
-          </ol>
-        </nav>
-    
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Actualités et évènements</li>
+        </ol>
+      </nav>
       <!-- END BREADCRUMB-->
 
-      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; list-style: none; margin: 0;padding: 0; margin-top: 40px">
+      <h1>
+        Actualités et événements 
+      </h1>
 
-        <!--CARD 1-->
-        <div style=" position: relative; width: 365px;height: 360px; margin-top: 30px">
-          <div class="actu-card" style="z-index: 10; margin-left:15px; position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;">
-            <div class="card-front" data-image-position="top" style="background-color: rgb(255, 255, 255); height: 344px; width: 350px">
-              <div class="card-image card-image-top">
-                <img src="./assets/actus/card-youtube.png" />
+      <div id="actus-cards" >
+        <!--CARD-->
+        <div class="actus-card-single">
+          <div class="actus-changing-color-card" >
+            <div class="actus-changing-card">
+              <div class="actus-card-image">
+                <img src="./assets/actus/minature-un-forum-patrimoine-sur-youtube.jpg" />
               </div>
-              <div class="card-content" style="margin: 24px; height: 172px; position: relative;">
-
-                <div style="height: 132px; position: relative;";>
-                  <div style="">
-                    <h3 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 2;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important; height:50px">
-                      Images can be  cards.
-                     
+              <div class="actus-card-content">
+                <div class="actus-card-content-text">
+                  <div class="actus-card-content-text-title">
+                    <h3>
+                      Un forum patrimoine sur Youtube
                     </h3>
                   </div>
-                    <h5 style="margin: 0px!important; margin-bottom: 10px!important">29 octobre 2021</h5>
-                    <h4 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 1;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important; opacity:0.75;
-                    position: absolute; bottom: 0;">
-                      Images can be placed at the top of cards vzouvuezozehuvz
-                    </h4>
+                  <h5>29 octobre 2021</h5>
+                  <h4>
+                    Le Salon international du patrimoine qui est une des très belles vitrines des métiers
+                  </h4>
                 </div>
-
-                <div style="max-height: 30px; position: absolute; bottom: 0;">
-                  <a href="#" style="text-decoration: none;">
-                    <div style="display: flex; align-items: baseline;">
+                <div class="actus-card-content-link">
+                  <a href="#">
+                    <div class="actus-link-flex">
                       <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/>
                         </svg>
-                      <!-- <img src="./assets/actus/Vector.png" style="" /> -->
-                      <h5 style="margin: 0; padding-left:24px; color: #e6362d">
-                        Lire l'actualité
-                      </h5>
-                    </div>
-                  </a>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          <div style="position:absolute; width: 265px; height: 259px; bottom: 0; left: 0; background-image: url('./assets/actus/Rectangle\ 29.png');">
-          </div>
-        </div>
-        <!--END CARD 1-->
-
-        <div style=" position: relative; width: 365px;height: 360px; margin-top: 30px">
-          <div class="actu-card" style="z-index: 10; margin-left:15px; position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;">
-            <div class="card-front" data-image-position="top" style="background-color: rgb(255, 255, 255); height: 344px; width: 350px">
-              <div class="card-image card-image-top">
-                <img src="./assets/actus/card-hands.png" />
-              </div>
-        
-              <div class="card-content" style="margin: 24px; height: 172px; position: relative;">
-
-                <div style="height: 132px; position: relative;";>
-                  <div style="">
-                    <h3 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 2;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important">
-                      Images can be placed at the top of cards.
-                      Images can be placed at the s.vusvevoudevuevzvvzevezveveez
-                    </h3>
-                  </div>
-                    <h5 style="margin: 0px!important; margin-bottom: 10px!important">29 octobre 2021</h5>
-                    <h4 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 1;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important; opacity:0.75;
-                    position: absolute; bottom: 0;">
-                      Images can be placed at the top of cards vzouvuezozehuvz
-                    </h4>
-                </div>
-
-                <div style="max-height: 30px; position: absolute; bottom: 0;">
-                  <a href="#" style="text-decoration: none;">
-                    <div style="display: flex; align-items: baseline;">
-                      <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/>
-                        </svg>
-                      <!-- <img src="./assets/actus/Vector.png" style="" /> -->
-                      <h5 style="margin: 0; padding-left:24px; color: #e6362d">
+                      <h5>
                         Lire l'actualité
                       </h5>
                     </div>
                   </a>
                 </div>
               </div>
-              
             </div>
           </div>
-
-          <div style="position:absolute; width: 265px; height: 259px; bottom: 0; left: 0; background-image: url('./assets/actus/Rectangle\ 31.png');">
+          <div>
           </div>
         </div>
+        <!--END CARD-->
 
-        <div style=" position: relative; width: 365px;height: 360px; margin-top: 30px">
-          <div class="actu-card" style="z-index: 10; margin-left:15px; position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;">
-            <div class="card-front" data-image-position="top" style="background-color: rgb(255, 255, 255); height: 344px; width: 350px">
-              <div class="card-image card-image-top">
-                <img src="./assets/actus/card-church.png" />
-              </div>
-              
-              <div class="card-content" style="margin: 24px; height: 172px; position: relative;">
-
-                <div style="height: 132px; position: relative;";>
-                  <div style="">
-                    <h3 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 2;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important">
-                      Images can be placed at the top of cards.
-                      Images can be placed at the s.vusvevoudevuevzvvzevezveveez
-                    </h3>
-                  </div>
-                    <h5 style="margin: 0px!important; margin-bottom: 10px!important">29 octobre 2021</h5>
-                    <h4 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 1;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important; opacity:0.75;
-                    position: absolute; bottom: 0;">
-                      Images can be placed at the top of cards vzouvuezozehuvz
-                    </h4>
+          <!--CARD-->
+          <div class="actus-card-single">
+            <div class="actus-changing-color-card" >
+              <div class="actus-changing-card">
+                <div class="actus-card-image">
+                  <img src="./assets/actus/minature-quelques-fonds-pour-le-patrimoine.jpg" />
                 </div>
-
-                <div style="max-height: 30px; position: absolute; bottom: 0;">
-                  <a href="#" style="text-decoration: none;">
-                    <div style="display: flex; align-items: baseline;">
-                      <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/>
-                        </svg>
-                      <!-- <img src="./assets/actus/Vector.png" style="" /> -->
-                      <h5 style="margin: 0; padding-left:24px; color: #e6362d">
-                        Lire l'actualité
-                      </h5>
+                <div class="actus-card-content">
+                  <div class="actus-card-content-text">
+                    <div class="actus-card-content-text-title">
+                      <h3>
+                        Quelques fonds pour le Patrimoine dans le PLF 2021
+                      </h3>
                     </div>
-                  </a>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-
-          <div style="position:absolute; width: 265px; height: 259px; bottom: 0; left: 0; background-image: url('./assets/actus/Rectangle\ 29.png');">
-          </div>
-        </div>
-
-        <div style=" position: relative; width: 365px;height: 360px; margin-top: 30px">
-          <div class="actu-card" style="z-index: 10; margin-left:15px; position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;">
-            <div class="card-front" data-image-position="top" style="background-color: rgb(255, 255, 255); height: 344px; width: 350px">
-              <div class="card-image card-image-top">
-                <img src="./assets/actus/card-hands.png" />
-              </div>
-
-              <div class="card-content" style="margin: 24px; height: 172px; position: relative;">
-
-                <div style="height: 132px; position: relative;";>
-                  <div style="">
-                    <h3 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 2;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important">
-                 
-                      Images can be placed at the !
-                    </h3>
-                  </div>
-                    <h5 style="margin: 0px!important; margin-bottom: 10px!important">29 octobre 2021</h5>
-                    <h4 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 1;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important; opacity:0.75;
-                    position: absolute; bottom: 0;">
-                      Images can be placed at the top of cards vzouvuezozehuvz
+                    <h5>28 septembre 2021</h5>
+                    <h4>
+                      Le projet de loi de Finances pour 2021 chaque
                     </h4>
-                </div>
-
-                <div style="max-height: 30px; position: absolute; bottom: 0;">
-                  <a href="#" style="text-decoration: none;">
-                    <div style="display: flex; align-items: baseline;">
-                      <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/>
-                        </svg>
-                      <!-- <img src="./assets/actus/Vector.png" style="" /> -->
-                      <h5 style="margin: 0; padding-left:24px; color: #e6362d">
-                        Lire l'actualité
-                      </h5>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div style="position:absolute; width: 265px; height: 259px; bottom: 0; left: 0; background-image: url('./assets/actus/Rectangle\ 31.png');">
-          </div>
-        </div>
-
-
-        <div style=" position: relative; width: 365px;height: 360px; margin-top: 30px">
-          <div class="actu-card" style="z-index: 10; margin-left:15px; position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;">
-            <div class="card-front" data-image-position="top" style="background-color: rgb(255, 255, 255); height: 344px; width: 350px">
-              <div class="card-image card-image-top">
-                <img src="./assets/actus/card-build.png" />
-              </div>
-             
-              <div class="card-content" style="margin: 24px; height: 172px; position: relative;">
-
-                <div style="height: 132px; position: relative;";>
-                  <div style="">
-                    <h3 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 2;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important">
-                      Images can be placed at the top of cards.
-                      Images can be placed at the s.vusvevoudevuevzvvzevezveveez
-                    </h3>
                   </div>
-                    <h5 style="margin: 0px!important; margin-bottom: 10px!important">29 octobre 2021</h5>
-                    <h4 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 1;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important; opacity:0.75;
-                    position: absolute; bottom: 0;">
-                      Images can be placed at the top of cards vzouvuezozehuvz
-                    </h4>
-                </div>
-
-                <div style="max-height: 30px; position: absolute; bottom: 0;">
-                  <a href="#" style="text-decoration: none;">
-                    <div style="display: flex; align-items: baseline;">
-                      <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/>
-                        </svg>
-                      <!-- <img src="./assets/actus/Vector.png" style="" /> -->
-                      <h5 style="margin: 0; padding-left:24px; color: #e6362d">
-                        Lire l'actualité
-                      </h5>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div style="position:absolute; width: 265px; height: 259px; bottom: 0; left: 0; background-image: url('./assets/actus/Rectangle\ 29.png');">
-          </div>
-        </div>
-
-        <div style=" position: relative; width: 365px;height: 360px; margin-top: 30px">
-          <div class="actu-card" style="z-index: 10; margin-left:15px; position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;">
-            <div class="card-front" data-image-position="top" style="background-color: rgb(255, 255, 255); height: 344px; width: 350px">
-              <div class="card-image card-image-top">
-                <img src="./assets/actus/card-tree.png" />
-              </div>
-              
-              <div class="card-content" style="margin: 24px; height: 172px; position: relative;">
-
-                <div style="height: 132px; position: relative;";>
-                  <div style="">
-                    <h3 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 2;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important">
-                      Images can be placed at the top of cards.
-                      Images can be placed at the s.vusvevoudevuevzvvzevezveveez
-                    </h3>
+                  <div class="actus-card-content-link">
+                    <a href="#">
+                      <div class="actus-link-flex">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/>
+                          </svg>
+                        <h5>
+                          Lire l'actualité
+                        </h5>
+                      </div>
+                    </a>
                   </div>
-                    <h5 style="margin: 0px!important; margin-bottom: 10px!important">29 octobre 2021</h5>
-                    <h4 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 1;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important; opacity:0.75;
-                    position: absolute; bottom: 0;">
-                      Images can be placed at the top of cards vzouvuezozehuvz
-                    </h4>
-                </div>
-
-                <div style="max-height: 30px; position: absolute; bottom: 0;">
-                  <a href="#" style="text-decoration: none;">
-                    <div style="display: flex; align-items: baseline;">
-                      <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/>
-                        </svg>
-                      <!-- <img src="./assets/actus/Vector.png" style="" /> -->
-                      <h5 style="margin: 0; padding-left:24px; color: #e6362d">
-                        Lire l'actualité
-                      </h5>
-                    </div>
-                  </a>
                 </div>
               </div>
-
+            </div>
+            <div>
             </div>
           </div>
+          <!--END CARD-->
 
-          <div style="position:absolute; width: 265px; height: 259px; bottom: 0; left: 0; background-image: url('./assets/actus/Rectangle\ 31.png');">
-          </div>
-        </div>
-
-        <div style=" position: relative; width: 365px;height: 360px; margin-top: 30px">
-          <div class="actu-card" style="z-index: 10; margin-left:15px; position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;">
-            <div class="card-front" data-image-position="top" style="background-color: rgb(255, 255, 255); height: 344px; width: 350px">
-              <div class="card-image card-image-top">
-                <img src="./assets/actus/card-carpenter.png" />
-              </div>
-             
-              <div class="card-content" style="margin: 24px; height: 172px; position: relative;">
-
-                <div style="height: 132px; position: relative;";>
-                  <div style="">
-                    <h3 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 2;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important">
-                      Images can be placed at the top of cards.
-                      Images can be placed at the s.vusvevoudevuevzvvzevezveveez
-                    </h3>
+          <!--CARD-->
+          <div class="actus-card-single">
+            <div class="actus-changing-color-card" >
+              <div class="actus-changing-card">
+                <div class="actus-card-image">
+                  <img src="./assets/actus/minature-notre-dame-de-paris-la-nouvelle-aquitaine.jpg" />
+                </div>
+                <div class="actus-card-content">
+                  <div class="actus-card-content-text">
+                    <div class="actus-card-content-text-title">
+                      <h3>
+                        Notre-Dame de Paris : la Nouvelle Aquitaine réalise une travée de la manche
+                      </h3>
+                    </div>
+                    <h5>15 septembre 2021</h5>
+                    <h4>
+                      Notre-Dame de Paris : la Nouvelle Aquitaine réalise une travée de la...
+                    </h4>
                   </div>
-                    <h5 style="margin: 0px!important; margin-bottom: 10px!important">29 octobre 2021</h5>
-                    <h4 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 1;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important; opacity:0.75;
-                    position: absolute; bottom: 0;">
-                      Images can be placed at the top of cards vzouvuezozehuvz
-                    </h4>
-                </div>
-
-                <div style="max-height: 30px; position: absolute; bottom: 0;">
-                  <a href="#" style="text-decoration: none;">
-                    <div style="display: flex; align-items: baseline;">
-                      <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/>
-                        </svg>
-                      <!-- <img src="./assets/actus/Vector.png" style="" /> -->
-                      <h5 style="margin: 0; padding-left:24px; color: #e6362d">
-                        Lire l'actualité
-                      </h5>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div style="position:absolute; width: 265px; height: 259px; bottom: 0; left: 0; background-image: url('./assets/actus/Rectangle\ 29.png');">
-          </div>
-        </div>
-
-        <div style=" position: relative; width: 365px;height: 360px; margin-top: 30px">
-          <div class="actu-card" style="z-index: 10; margin-left:15px; position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;">
-            <div class="card-front" data-image-position="top" style="background-color: rgb(255, 255, 255); height: 344px; width: 350px">
-              <div class="card-image card-image-top">
-                <img src="./assets/actus/card-hamer.png" />
-              </div>
-              
-              <div class="card-content" style="margin: 24px; height: 172px; position: relative;">
-
-                <div style="height: 132px; position: relative;";>
-                  <div style="">
-                    <h3 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 2;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important">
-                      Images can be placed at the top of cards.
-                      Images can be placed at the s.vusvevoudevuevzvvzevezveveez
-                    </h3>
+                  <div class="actus-card-content-link">
+                    <a href="#">
+                      <div class="actus-link-flex">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/>
+                          </svg>
+                        <h5>
+                          Lire l'actualité
+                        </h5>
+                      </div>
+                    </a>
                   </div>
-                    <h5 style="margin: 0px!important; margin-bottom: 10px!important">29 octobre 2021</h5>
-                    <h4 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 1;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important; opacity:0.75;
-                    position: absolute; bottom: 0;">
-                      Images can be placed at the top of cards vzouvuezozehuvz
-                    </h4>
-                </div>
-
-                <div style="max-height: 30px; position: absolute; bottom: 0;">
-                  <a href="#" style="text-decoration: none;">
-                    <div style="display: flex; align-items: baseline;">
-                      <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/>
-                        </svg>
-                      <!-- <img src="./assets/actus/Vector.png" style="" /> -->
-                      <h5 style="margin: 0; padding-left:24px; color: #e6362d">
-                        Lire l'actualité
-                      </h5>
-                    </div>
-                  </a>
                 </div>
               </div>
-
+            </div>
+            <div>
             </div>
           </div>
+          <!--END CARD-->
 
-          <div style="position:absolute; width: 265px; height: 259px; bottom: 0; left: 0; background-image: url('./assets/actus/Rectangle\ 31.png');">
-          </div>
-        </div>
-
-        <div style=" position: relative; width: 365px;height: 360px; margin-top: 30px">
-          <div class="actu-card" style="z-index: 10; margin-left:15px; position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;">
-            <div class="card-front" data-image-position="top" style="background-color: rgb(255, 255, 255); height: 344px; width: 350px">
-              <div class="card-image card-image-top">
-                <img src="./assets/actus/card-village.png" />
-              </div>
-              
-              <div class="card-content" style="margin: 24px; height: 172px; position: relative;">
-
-                <div style="height: 132px; position: relative;";>
-                  <div style="">
-                    <h3 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 2;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important">
-                      Images can be placed at the top of cards.
-                      Images can be placed at the s.vusvevoudevuevzvvzevezveveez
-                    </h3>
+          <!--CARD-->
+          <div class="actus-card-single">
+            <div class="actus-changing-color-card" >
+              <div class="actus-changing-card">
+                <div class="actus-card-image">
+                  <img src="./assets/actus/minature-vente-locaux-ISM.jpg" />
+                </div>
+                <div class="actus-card-content">
+                  <div class="actus-card-content-text">
+                    <div class="actus-card-content-text-title">
+                      <h3>
+                        La vente des locaux de l’ISM au profit de la promotion des métiers du patrimoine
+                      </h3>
+                    </div>
+                    <h5>12 fevrier 2021</h5>
+                    <h4>
+                      L’Institut Supérieur des Métiers, qui assure la
+                    </h4>
                   </div>
-                    <h5 style="margin: 0px!important; margin-bottom: 10px!important">29 octobre 2021</h5>
-                    <h4 style="overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 1;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; margin: 0px!important; margin-bottom: 10px!important; opacity:0.75;
-                    position: absolute; bottom: 0;">
-                      Images can be placed at the top of cards vzouvuezozehuvz
-                    </h4>
-                </div>
-
-                <div style="max-height: 30px; position: absolute; bottom: 0;">
-                  <a href="#" style="text-decoration: none;">
-                    <div style="display: flex; align-items: baseline;">
-                      <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/>
-                        </svg>
-                      <!-- <img src="./assets/actus/Vector.png" style="" /> -->
-                      <h5 style="margin: 0; padding-left:24px; color: #e6362d">
-                        Lire l'actualité
-                      </h5>
-                    </div>
-                  </a>
+                  <div class="actus-card-content-link">
+                    <a href="#">
+                      <div class="actus-link-flex">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/>
+                          </svg>
+                        <h5>
+                          Lire l'actualité
+                        </h5>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
-
+            </div>
+            <div>
             </div>
           </div>
+          <!--END CARD-->
 
-          <div style="position:absolute; width: 265px; height: 259px; bottom: 0; left: 0; background-image: url('./assets/actus/Rectangle\ 29.png');">
+          <!--CARD-->
+          <div class="actus-card-single">
+            <div class="actus-changing-color-card" >
+              <div class="actus-changing-card">
+                <div class="actus-card-image">
+                  <img src="./assets/actus/minature-a-la-recherche-des-pierres-de-construction.jpg" />
+                </div>
+                <div class="actus-card-content">
+                  <div class="actus-card-content-text">
+                    <div class="actus-card-content-text-title">
+                      <h3>
+                        L’Institut Supérieur des Métiers, qui assure la
+                      </h3>
+                    </div>
+                    <h5>8 février 2021</h5>
+                    <h4>
+                      Le chantier de restauration et de reconstruction de 
+                    </h4>
+                  </div>
+                  <div class="actus-card-content-link">
+                    <a href="#">
+                      <div class="actus-link-flex">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/>
+                          </svg>
+                        <h5>
+                          Lire l'actualité
+                        </h5>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+            </div>
           </div>
-        </div>
+          <!--END CARD-->
 
+          <!--CARD-->
+          <div class="actus-card-single">
+            <div class="actus-changing-color-card" >
+              <div class="actus-changing-card">
+                <div class="actus-card-image">
+                  <img src="./assets/actus/minature-les-chenes-selectionnes.jpg" />
+                </div>
+                <div class="actus-card-content">
+                  <div class="actus-card-content-text">
+                    <div class="actus-card-content-text-title">
+                      <h3>
+                        Le chantier de restauration et de reconstruction 
+                      </h3>
+                    </div>
+                    <h5>5 février 2021</h5>
+                    <h4>
+                      En même temps que les gisements de pétrole du Quatar
+                    </h4>
+                  </div>
+                  <div class="actus-card-content-link">
+                    <a href="#">
+                      <div class="actus-link-flex">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/>
+                          </svg>
+                        <h5>
+                          Lire l'actualité
+                        </h5>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+          <!--END CARD -->
+
+          <!--CARD-->
+          <div class="actus-card-single">
+            <div class="actus-changing-color-card" >
+              <div class="actus-changing-card">
+                <div class="actus-card-image">
+                  <img src="./assets/actus/minature-les-artisans-du-patrimoine-se-font-connaitre.jpg" />
+                </div>
+                <div class="actus-card-content">
+                  <div class="actus-card-content-text">
+                    <div class="actus-card-content-text-title">
+                      <h3>
+                        En même temps que les gisements de pétrole de la Creuse
+                      </h3>
+                    </div>
+                    <h5>Novembre 2020</h5>
+                    <h4>
+                      Les artisans du patrimoine ont un savoir-faire incroyable
+                    </h4>
+                  </div>
+                  <div class="actus-card-content-link">
+                    <a href="#">
+                      <div class="actus-link-flex">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/>
+                          </svg>
+                        <h5>
+                          Lire l'actualité
+                        </h5>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+          <!--END CARD-->
+
+          <!--CARD-->
+          <div class="actus-card-single">
+            <div class="actus-changing-color-card" >
+              <div class="actus-changing-card">
+                <div class="actus-card-image">
+                  <img src="./assets/actus/minature-un-appel-a-competences.jpg" />
+                </div>
+                <div class="actus-card-content">
+                  <div class="actus-card-content-text">
+                    <div class="actus-card-content-text-title">
+                      <h3>
+                        Un appel à compétences est lancé pour la restauration de Notre-Dame de Paris
+                      </h3>
+                    </div>
+                    <h5>Novembre 2020</h5>
+                    <h4>
+                      L’établissement public qui gère la restauration
+                    </h4>
+                  </div>
+                  <div class="actus-card-content-link">
+                    <a href="#">
+                      <div class="actus-link-flex">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/>
+                          </svg>
+                        <h5>
+                          Lire l'actualité
+                        </h5>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+          <!--END CARD-->
+
+          <!--CARD-->
+          <div class="actus-card-single">
+            <div class="actus-changing-color-card" >
+              <div class="actus-changing-card">
+                <div class="actus-card-image">
+                  <img src="./assets/actus/minature-fondation-du-patrimoine.jpg" />
+                </div>
+                <div class="actus-card-content">
+                  <div class="actus-card-content-text">
+                    <div class="actus-card-content-text-title">
+                      <h3>
+                        Fondation du patrimoine
+                      </h3>
+                    </div>
+                    <h5>Août 2020</h5>
+                    <h4>
+                      La troisième loi de finances rectificative promulguée le 30 juillet 2020 permet ...
+                    </h4>
+                  </div>
+                  <div class="actus-card-content-link">
+                    <a href="#">
+                      <div class="actus-link-flex">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/>
+                          </svg>
+                        <h5>
+                          Lire l'actualité
+                        </h5>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+          <!--END CARD-->
       </div>
 
-      <!-- PAGINATION -->
-      <!-- <div class="pagination" style="margin-bottom: 104px; margin-top: 64px">
-        <a href="#">&laquo;</a>
-        <a href="#">1</a>
-        <a href="#" class="active">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">6</a>
-        <a href="#">&raquo;</a>
-      </div>  -->
-
-
-      <div id="actu-pagination" style="display: flex; justify-content: center; margin-top: 60px">
-
+      <!--PAGINATION-->
+      <div id="actus-pagination" >
         <nav aria-label="Page navigation example">
           <ul class="pagination">
             <li class="page-item">
@@ -645,42 +472,23 @@
             </li>
           </ul>
         </nav>
-
       </div>
-      
       <!--FIN PAGINATION-->
 
       <h2>
         Les évènements dédiés au Patrimoine bâti
       </h2>
-       <!-- CALENDRIER -->
 
-       <div style="margin-top: 48px">
-       <div style="position: relative; width:550px ;height: 478px; margin-top: 30px">
-
-            <div id='calendar' style="z-index: 10; margin-right:20px; position: absolute;
-            width: 530px;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-color: white;"></div>
-            <div style="position:absolute; width: 100%; height: 414px; bottom: 0; right: 0; background-image: url('./assets/actus/Rectangle\ 31.png')">
-            </div>  
-  
+       <!--- EVENT CALENDAR -->
+      <div class="calendar-flex">
+          <div id="calendar"></div>
+          <div id="result"></div>
       </div>
-    </div>
-    
-      <!-- FIN CALENDRIER -->
-
-      <div style="height: 100px; width: 300px; background-color: rgb(136, 136, 160);" id="main-container">
-
-      </div>
+      <!--- EN OF EVENT CALENDAR -->
 
   </div>
 
      
-
-
     <!-- FOOTER -->
     <footer>
       <div id="home-footer-container-queries">
@@ -728,5 +536,123 @@
         <p>CAPEB - Copyright 2020</p>
     </div>
     <!-- END FOOTER -->
+
+
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+      <!--- EVENT CALENDAR -->
+      <script src="moment.min.js"></script>
+      <script src="eventCalendar.js"></script>
+
+      <script>
+          !(function() {
+              var data = [{
+
+                      imageEvent: 'background-image:url(http://gpsea.kanbios.fr/wp-content/uploads/2021/03/ile-aux-histoires.gif)',
+                      eventName: "Île aux histoires",
+                      eventCate: "Loisir",
+                      theContent: "Comme une promenade",
+                      eventLink: "http://gpsea.kanbios.fr/evenements/ile-aux-histoires/",
+                      arrowLink: "http://gpsea.kanbios.fr/wp-content/themes/gpsea/img/arrow.svg",
+                      calendar: "Work",
+                      color: "redgpsea",
+                      eventTime: "03/03/2021",
+
+                      eventTimeConvertDay: "03",
+
+                      eventTimeConvertMonth: "Mar"
+                  },
+
+                  {
+
+                      imageEvent: 'background-image:url(http://gpsea.kanbios.fr/wp-content/uploads/2021/03/atelier-mail.gif)',
+                      eventName: "Atelier Mail",
+                      eventCate: "Culture",
+                      theContent: "Apprendre à envoyer, recevoir et lire des e-mails",
+                      eventLink: "http://gpsea.kanbios.fr/evenements/atelier-mail/",
+                      arrowLink: "http://gpsea.kanbios.fr/wp-content/themes/gpsea/img/arrow.svg",
+                      calendar: "Work",
+                      color: "redgpsea",
+                      eventTime: "03/04/2021",
+
+                      eventTimeConvertDay: "03",
+
+                      eventTimeConvertMonth: "Apr"
+                  },
+
+                  {
+
+                      imageEvent: 'background-image:url(http://gpsea.kanbios.fr/wp-content/uploads/2021/03/clavier.gif)',
+                      eventName: "Découverte de l’ordinateur",
+                      eventCate: "Culture",
+                      theContent: "Atelier pour un premier contact avec l'ordinateur",
+                      eventLink: "http://gpsea.kanbios.fr/evenements/decouverte-de-lordinateur/",
+                      arrowLink: "http://gpsea.kanbios.fr/wp-content/themes/gpsea/img/arrow.svg",
+                      calendar: "Work",
+                      color: "redgpsea",
+                      eventTime: "27/03/2021",
+
+                      eventTimeConvertDay: "27",
+
+                      eventTimeConvertMonth: "Mar"
+                  },
+
+                  {
+
+                      imageEvent: 'background-image:url(http://gpsea.kanbios.fr/wp-content/uploads/2021/03/semaine-du-cerveau-1.gif)',
+                      eventName: "La semaine du cerveau",
+                      eventCate: "Culture",
+                      theContent: "Exposition sur les illusions d’optique et les biais cognitifs",
+                      eventLink: "http://gpsea.kanbios.fr/evenements/la-semaine-du-cerveau-9/",
+                      arrowLink: "http://gpsea.kanbios.fr/wp-content/themes/gpsea/img/arrow.svg",
+                      calendar: "Work",
+                      color: "redgpsea",
+                      eventTime: "23/03/2021",
+
+                      eventTimeConvertDay: "23",
+
+                      eventTimeConvertMonth: "Mar"
+                  },
+
+                  {
+
+                      imageEvent: 'background-image:url(http://gpsea.kanbios.fr/wp-content/uploads/2021/03/semaine-du-cerveau-1.gif)',
+                      eventName: "La semaine du cerveau",
+                      eventCate: "Culture",
+                      theContent: "Exposition sur les illusions d’optique et les biais cognitifs",
+                      eventLink: "http://gpsea.kanbios.fr/evenements/la-semaine-du-cerveau-8/",
+                      arrowLink: "http://gpsea.kanbios.fr/wp-content/themes/gpsea/img/arrow.svg",
+                      calendar: "Work",
+                      color: "redgpsea",
+                      eventTime: "22/03/2021",
+
+                      eventTimeConvertDay: "22",
+
+                      eventTimeConvertMonth: "Mar"
+                  },
+
+              ];
+
+              function addDate(ev) {}
+
+              var calendar = new Calendar("#calendar", data);
+
+              $('.dateformat').each(function(index, dateElem) {
+                  var $dateElem = $(dateElem);
+                  var formatted = moment($dateElem.text(), 'DD/MM/YYYY').format('D MMMM');
+                  $dateElem.text(formatted);
+              })
+
+          })();
+
+      </script>
+
+
   </body>
 </html>

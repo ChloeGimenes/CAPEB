@@ -1067,16 +1067,38 @@ a:hover .bloc-group-white {
   }
 
   /* ACTUS */
-
   #actus-main {
+    max-width:1110px; 
+    margin-top: 140px; 
+    margin-right: auto; 
+    margin-left: auto;
+  }
+
+  #actus-main > h1 {
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 56px;
+  }
+
+  #actus-main > h2 {
+    margin-top: 104px;
+    margin-bottom: 48px;
+  }
+
+  #actus-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
 
   /* PAGINATION */
+  #actus-pagination {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 60px;
+  }
 
-  #actu-pagination nav ul li a {
+  #actus-pagination nav ul li a {
     color: black;  }
 
   .page-item.active .page-link {
@@ -1095,90 +1117,1081 @@ a:hover .bloc-group-white {
 
   }
 
-
-
-
-  /* CALENDAR //////////////*/
-
-  #calendar {
-    /* max-width: 540px;
-    max-height: 521px; */
-
+  #actus-cards > div:nth-child(even)  > div:nth-child(2)  {
+    position: absolute;
+    width: 265px;
+    height: 259px;
+    bottom: 0;
+    left: -15px;
+    background-color:  #602483;
   }
 
+    #actus-cards > div:nth-child(odd)  > div:nth-child(2)  {
+      position: absolute;
+      width: 265px;
+      height: 259px;
+      bottom: 0;
+      left: -15px;
+      background-color: #e6362d;
+    }
 
-
-  .fc-theme-standard td, .fc-theme-standard th {
-  
-    border: 1px solid #fff!important;
-  }
-
-  .fc .fc-daygrid-day-frame {
+  .actus-card-single {
+    width: 350px;
+    height: 360px; 
     position: relative;
-    min-height: 100%;
-    display: flex;
-    justify-content: center;
+  }
+
+  .actus-changing-color-card {
+    z-index: 10; 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; top: 0; 
+    left: 0;
+  }
+
+  .actus-changing-card {
+    width: 350px;
+    height: 344px; 
+    background-color: rgb(255, 255, 255); 
+    box-shadow: 0 4px 15px 0 rgba(131, 131, 131, 0.2);
+  }
+
+  .actus-card-content {
+    margin: 28px 24px 24px 24px; 
+    height: 172px; 
+    position: relative;
+  }
+
+  .actus-card-content-text {
+    height: 132px; 
+    position: relative;
+  }
+
+  .actus-card-content-text-title > h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+    margin: 0px!important; 
+    margin-bottom: 10px!important; 
+    height:50px;
+  }
+
+  .actus-card-content-text > h5 {
+    margin: 0px!important; 
+    margin-bottom: 10px!important;
+  }
+
+  .actus-card-content-text > h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+    margin: 0px!important; 
+    margin-bottom: 10px!important; 
+    opacity:0.75;
+    position: absolute; bottom: 0;
+  }
+
+  .actus-card-content-link {
+    max-height: 30px; 
+    position: absolute; 
+    bottom: 0;
+  }
+
+  .actus-card-content-link > a {
+    text-decoration: none;
+  }
+
+  .actus-link-flex {
+    display: flex; 
     align-items: center;
   }
 
-  .fc-theme-standard .fc-scrollgrid {
-    border: 1px solid #fff!important;
-
+  .actus-link-flex > h5 {
+    margin: 0; 
+    padding-left:24px; 
+    color: #e6362d;
   }
 
-  button.fc-today-button.fc-button-primary {
-    display: none;
+
+  @media (max-width: 1200px) {
+  #actus-main {
+    margin-left: 40px!important;
+    margin-right: 40px!important;
+    }
+
+    .actus-card-single {
+      width: 30%;
+    }
+    .actus-changing-card {
+      width: 100%;
+      }
+    .actus-card-image > img {
+      width: 100%;;
+    }
   }
 
-  button.fc-next-button.fc-button.fc-button-primary,
-  button.fc-prev-button.fc-button.fc-button-primary {
-
-    background-color: white;
-    border-radius: 50px!important;
-    padding: 2px!important;
-
+  @media (max-width: 620px) {
+  #actus-main {
+    margin-left: 20px!important;
+    margin-right: 20px!important;
+    }
   }
 
-  button.fc-prev-button.fc-button.fc-button-primary {
-    margin-right: 25px;
+
+  /* ACTUS DETAILS PAGES ///////////////////////////////////////////////////*/
+
+  #actus-details-main {
+    max-width: 1110px;
+    margin-top: 140px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
-  span.fc-icon.fc-icon-chevron-left ,
-  span.fc-icon.fc-icon-chevron-right {
-    color: black;
-  }
-
-  .fc .fc-button-group>.fc-button {
+  #actus-details-bloc-image {
+    width: 1110px;
+    height: 323px;
     position: relative;
-    flex: none!important;
+    margin-top: 40px;
   }
 
-  /* CHANGING BOOTSTRAP NATIVS COLORS*/
-  div.fc-scrollgrid-sync-inner > .fc-col-header-cell-cushion {
-    color: black!important;
-    text-decoration: none!important;
-  }
-  div.fc-daygrid-day-top > a.fc-daygrid-day-number {
-    color: black!important;
-    text-decoration: none!important;
+  #actus-details-bloc-image > img {
+    z-index: 10;
+    position: absolute;
+    width: 1090px;
+    top: 0;
+    right: 0;
 
   }
 
-  /* CHANGING BACKGROUND COLOR TODAY DATE*/
-  .fc .fc-daygrid-day.fc-day-today {
-    background-color: #92d4b0!important;
+  #actus-details-bloc-image > div {
+    position: absolute;
+    width: 1090px;
+    height: 303px;
+    bottom: 0;
+    left: 0;
+    background-color: #e6362d;
   }
 
-  .fc .fc-daygrid-day.fc-day-today {
-    
+  #actus-details-main > h1 {
+    margin-top: 56px;
+    margin-bottom: 56px; 
   }
 
-  .fc .fc-daygrid-day.fc-day-today .fc.day-grid-day-top > a.fc-daygrid-day-number  {
-
-    border: 1px solid black!important;
-    border-radius: 50px;
+  #actus-details-bloc {
+   
+    box-shadow: 0 4px 15px 0 rgba(131, 131, 131, 0.2);
+    padding: 40px;
   }
- 
+
+  #actus-details-bloc > p {
+    color: #222220;
+    opacity: 0.75;
+    font-size: 18px;
+    margin-bottom: 27px
+  }
+
+  #actus-details-bloc > ul {
+    color: #222220;
+    opacity: 0.75;
+    font-size: 18px;
+    margin-bottom: 48px;
+    list-style: none;
+    /* padding-left: 0px; */
+  }
+
+  #actus-details-bloc > ul  {
+    padding-left: 18px!important;
+  }
+
+  #actus-details-bloc > ul > li::before {
+    content: "•"; 
+    color: #222220;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+   
+  }
+
+  #actus-details-bloc > blockquote {
+    font-size: 18px;
+    color: #222220;
+    opacity: 0.75;
+    margin-bottom: 27px;
+  }
+
+  #actus-details-bloc > h3 {
+      color: #e6362d;
+      margin-top: 48px;
+      margin-bottom: 32px;
+  }
+
+  #actus-details-bloc > p > a {
+    color: #e6362d;
+  }
+
+  #actus-details-bloc-violet {
+    margin-bottom: 48px;
+    padding: 40px 10px 40px 16px;
+    background-color: rgba(96, 36, 131, 0.04);
+    border-left: 4px solid #602483;
+  }
+
+  #actus-details-bloc-violet > h5 {
+    color: #602483;
+    opacity: 0.75;
+    line-height: 1.6;
+    margin: 0px;
+  }
+
+  #actus-details-bloc-violet > h5 > a {
+    color: #602483;
+    text-decoration: underline;
+  }
+
+  #actus-details-blocs {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 33px;
+  }
+
+  .actus-doc-bloc {
+    /* margin-top: 32px; */
+    height: 222px;
+    width: 498px;
+    box-shadow: 0 4px 15px 0 rgba(131, 131, 131, 0.2);
+  }
+
+  .actus-doc-bloc-flex {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    height: 100%;
+  }
+
+  .actus-bloc-flex-first {
+      flex: 1;
+  }
+
+  .actus-bloc-flex-second {
+      width: fit-content;
+  }
+  .actus-bloc-flex-second > a {
+    text-decoration: none;
+  }
+
+  .actus-bloc-flex-first > h3 {
+    line-height: 1.6;
+  }
+
+  .actus-bloc-flex-first > p {
+    line-height: 1.5;
+    opacity: 0.75;
+    font-size: 18px;
+    margin-top: 10px
+  }
+
+
+  /* CALENDAR /////////////////////////////////////////////////////////////*/
+
+  *,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+#calendar {
+
+    width: 50%;
+    margin: 30px;
+    height: 450px;
+
+    overflow: hidden;
+}
+
+#result {
+    width: 50%;
+}
+
+.header-calendar {
+    height: 50px;
+    width: 420px;
+    background: transparent;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+
+.header-calendar h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.calendar-flex {
+    display: flex;
+    width: 1100px;
+}
+
+
+
+.right {
+
+    width: 15px;
+    height: 15px;
+    background-size: 100%;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+}
+
+
+
+.left {
+    width: 15px;
+    height: 15px;
+    background-size: 100%;
+    position: absolute;
+    left: 20px;
+    top: 16px;
+}
+
+.month {
+    /*overflow: hidden;*/
+    opacity: 0;
+}
+
+.month.new {
+    -webkit-animation: fadeIn 1s ease-out;
+    opacity: 1;
+}
+
+.month.in.next {
+    -webkit-animation: moveFromTopFadeMonth .4s ease-out;
+    -moz-animation: moveFromTopFadeMonth .4s ease-out;
+    animation: moveFromTopFadeMonth .4s ease-out;
+    opacity: 1;
+}
+
+.month.out.next {
+    -webkit-animation: moveToTopFadeMonth .4s ease-in;
+    -moz-animation: moveToTopFadeMonth .4s ease-in;
+    animation: moveToTopFadeMonth .4s ease-in;
+    opacity: 1;
+}
+
+.month.in.prev {
+    -webkit-animation: moveFromBottomFadeMonth .4s ease-out;
+    -moz-animation: moveFromBottomFadeMonth .4s ease-out;
+    animation: moveFromBottomFadeMonth .4s ease-out;
+    opacity: 1;
+}
+
+.month.out.prev {
+    -webkit-animation: moveToBottomFadeMonth .4s ease-in;
+    -moz-animation: moveToBottomFadeMonth .4s ease-in;
+    animation: moveToBottomFadeMonth .4s ease-in;
+    opacity: 1;
+}
+
+.week {
+    background: transparent;
+}
+
+.day {
+    display: inline-block;
+    width: 60px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    z-index: 100;
+}
+
+.day.other {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.day.today {
+    background-color: red;
+    color: #fff !important;
+    height: 50px;
+}
+
+
+
+
+.day-name {
+    display: none;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: red;
+}
+
+.day.today .day-name {
+    color: #fff !important;
+}
+
+
+
+
+.month .week:first-child div:nth-child(-n+7) .day-name {
+    display: block;
+    margin-bottom: 30px;
+}
+
+
+
+.month .week:first-child .numactive .day-number {
+    background-color: #fff;
+    border: 1px solid red;
+    color: red !important;
+    padding: 13px;
+    width: 60px;
+    margin-top: -16px;
+    margin-left: -10px;
+}
+
+.day-number {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+}
+
+
+.day .day-events {
+    list-style: none;
+    margin-top: 3px;
+    text-align: center;
+    height: 12px;
+    line-height: 6px;
+    overflow: hidden;
+}
+
+.day .day-events span {
+    vertical-align: top;
+    display: none;
+    padding: 0;
+    margin: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+    line-height: 5px;
+    margin: 0 1px;
+}
+
+.redgpsea {
+    background: red;
+}
+
+
+.details {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+}
+
+.details.in {
+    -webkit-animation: moveFromTopFade 1s ease both;
+    -moz-animation: moveFromTopFade 1s ease both;
+    animation: moveFromTopFade 1s ease both;
+}
+
+.details.out {
+    -webkit-animation: moveToTopFade .5s ease both;
+    -moz-animation: moveToTopFade .5s ease both;
+    animation: moveToTopFade .5s ease both;
+}
+
+.arrow {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    margin-left: -2px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent rgba(164, 164, 164, 1) transparent;
+    transition: all 0.7s ease;
+}
+
+/* .events {
+    padding: 7px 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+} */
+
+.events.in {
+    -webkit-animation: fadeIn .3s ease both;
+    -moz-animation: fadeIn .3s ease both;
+    animation: fadeIn .3s ease both;
+}
+
+.events.in {
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    animation-delay: .3s;
+}
+
+.details.out .events {
+    -webkit-animation: fadeOutShrink .4s ease both;
+    -moz-animation: fadeOutShink .4s ease both;
+    animation: fadeOutShink .4s ease both;
+}
+
+.events.out {
+    -webkit-animation: fadeOut .3s ease both;
+    -moz-animation: fadeOut .3s ease both;
+    animation: fadeOut .3s ease both;
+}
+
+.event {
+    width: 100%;
+    display: flex;
+    min-height: 121px;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 24px 24px 0 24px;
+}
+
+.day-events span {
+    display: none;
+}
+
+.day-events span:first-child {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.event.empty {
+    color: #000000;
+    text-align: center;
+    height: auto;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 30px 30px 0 30px;
+}
+
+
+
+.contentext {
+    float: left;
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+.event span {
+    display: inline-block;
+    padding: 0 0 0 7px;
+}
+
+
+.image-calendar {
+    float: left;
+    border-radius: 24px 0 0 24px !important;
+    margin-right: 57px;
+    width: 200px;
+    display: block;
+    height: 100% !important;
+    background-color: #f7f7f7;
+    background-position: center;
+    background-size: cover;
+}
+
+.event .linksquare {
+    width: 100%;
+}
+
+
+.dateformat {
+    position: absolute;
+    background-color: #fff;
+    padding: 10px !important;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin-top: 22px;
+    left: 160px;
+
+}
+
+.clearboth {
+    clear: both;
+}
+
+.dayfront {
+    font-size: 47px;
+    height: 10px;
+    line-height: 1;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    padding: 0 !important;
+}
+
+.monthfront {
+    font-size: 15px;
+    line-height: 1;
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+    padding: 0 !important;
+}
+
+.exer {
+    font-size: 20px;
+    line-height: 1.35;
+    color: #000;
+}
+
+.event .read-more {
+    right: 0;
+    width: 40px;
+    height: 37px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px 0 0 0;
+    text-align: center;
+    padding: 10px;
+    background-color: red;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.event:hover .read-more {
+
+    height: 100%;
+    border-radius: 0px 24px 0 0;
+    padding-top: 65px;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+
+.event h4 {
+
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    padding-top: 20px;
+    color: red;
+    text-transform: uppercase;
+}
+
+
+.legend {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background: rgba(60, 60, 60, 1);
+    line-height: 30px;
+
+}
+
+.entry {
+    position: relative;
+    padding: 0 0 0 25px;
+    font-size: 13px;
+    display: inline-block;
+    line-height: 30px;
+    background: transparent;
+}
+
+.entry:after {
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 5px;
+    top: 12px;
+    left: 14px;
+}
+
+.entry.blue:after {
+    background: rgba(156, 202, 235, 1);
+}
+
+.entry.orange:after {
+    background: rgba(247, 167, 0, 1);
+}
+
+.entry.green:after {
+    background: rgba(153, 198, 109, 1);
+}
+
+.entry.yellow:after {
+    background: rgba(249, 233, 0, 1);
+}
+
+.contentext h6 {
+    color: red !important;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.numactive {
+    background-color: #fff;
+    border: 1px solid red;
+    color: red !important;
+    height: 50px;
+}
+
+.numactive .redgpsea {
+    background-color: #fff !important;
+}
+
+.numactive .day-name {
+    color: red !important;
+}
+
+.month .week:first-child .numactive {
+    background-color: transparent !important;
+    border: none !important;
+    color: red !important;
+
+}
+
+/* Animations are cool!  */
+@-webkit-keyframes moveFromTopFade {
+    from {
+        opacity: .3;
+        height: 0px;
+        margin-top: 0px;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-moz-keyframes moveFromTopFade {
+    from {
+        height: 0px;
+        margin-top: 0px;
+        -moz-transform: translateY(0%);
+    }
+}
+
+@keyframes moveFromTopFade {
+    from {
+        height: 0px;
+        margin-top: 0px;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes moveToTopFade {
+    to {
+        opacity: .3;
+        height: 0px;
+        margin-top: 0px;
+        opacity: 0.3;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-moz-keyframes moveToTopFade {
+    to {
+        height: 0px;
+        -moz-transform: translateY(0%);
+    }
+}
+
+@keyframes moveToTopFade {
+    to {
+        height: 0px;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes moveToTopFadeMonth {
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(-30%) scale(.95);
+    }
+}
+
+@-moz-keyframes moveToTopFadeMonth {
+    to {
+        opacity: 0;
+        -moz-transform: translateY(-30%);
+    }
+}
+
+@keyframes moveToTopFadeMonth {
+    to {
+        opacity: 0;
+        -moz-transform: translateY(-30%);
+    }
+}
+
+@-webkit-keyframes moveFromTopFadeMonth {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(30%) scale(.95);
+    }
+}
+
+@-moz-keyframes moveFromTopFadeMonth {
+    from {
+        opacity: 0;
+        -moz-transform: translateY(30%);
+    }
+}
+
+@keyframes moveFromTopFadeMonth {
+    from {
+        opacity: 0;
+        -moz-transform: translateY(30%);
+    }
+}
+
+@-webkit-keyframes moveToBottomFadeMonth {
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(30%) scale(.95);
+    }
+}
+
+@-moz-keyframes moveToBottomFadeMonth {
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(30%);
+    }
+}
+
+@keyframes moveToBottomFadeMonth {
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(30%);
+    }
+}
+
+@-webkit-keyframes moveFromBottomFadeMonth {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-30%) scale(.95);
+    }
+}
+
+@-moz-keyframes moveFromBottomFadeMonth {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-30%);
+    }
+}
+
+@keyframes moveFromBottomFadeMonth {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-30%);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOutShink {
+    to {
+        opacity: 0;
+        padding: 0px;
+        height: 0px;
+    }
+}
+
+@-moz-keyframes fadeOutShink {
+    to {
+        opacity: 0;
+        padding: 0px;
+        height: 0px;
+    }
+}
+
+@keyframes fadeOutShink {
+    to {
+        opacity: 0;
+        padding: 0px;
+        height: 0px;
+    }
+}
+
+@media (max-width:768px) {
+    #calendar {
+        width: 360px;
+        margin: 0 auto;
+        height: auto;
+        overflow: hidden;
+    }
+
+
+
+
+    .details {
+        height: auto;
+    }
+
+    .header-calendar {
+        height: 50px;
+        width: 360px;
+    }
+
+    .day {
+        display: inline-block;
+        width: 50px;
+    }
+
+    .day-name {
+        font-size: 18px;
+    }
+
+    .day-number {
+        font-size: 20px;
+    }
+
+    .event {
+        width: 90%;
+        height: auto;
+        margin-left: 30px;
+    }
+
+    .image-calendar {
+        float: left;
+        border-radius: 24px 0 0 0px !important;
+        margin-right: 57px;
+        width: 100%;
+        display: block;
+        height: 100px !important;
+    }
+
+    .contentext {
+        float: left;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+
+    .event h4 {
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        padding-top: 32px;
+    }
+
+    .exer {
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    .dateformat {
+        position: absolute;
+        margin-left: -167px;
+        background-color: #fff;
+        padding: 10px !important;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        margin-top: 8px;
+    }
+
+
+}
+
+@media (max-width: 414px) {
+    #calendar {
+        width: 100%;
+
+    }
+
+    .event {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .header-calendar {
+        height: 50px;
+        width: 100%;
+    }
+
+    .day {
+        display: inline-block;
+        width: 47px;
+    }
+}
+
+@media (max-width : 375px) {
+    .day {
+        display: inline-block;
+        width: 44px;
+    }
+}
+
 
 /* PAGE MON PARCOURS PATRIMOINE ////////////////////////////////////////////////////////////////*/
 
@@ -2612,7 +3625,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .cip-bloc-text > p,
-.cip-bloc-text > ul,
 .cip-bloc-text > blockquote {
   opacity: 0.75;
   line-height: 1.5;
@@ -2625,6 +3637,28 @@ input[type=number]::-webkit-outer-spin-button {
 .cip-bloc-text > p > a {
   color:#e6362d;
   opacity: 0.75;
+}
+
+
+.cip-bloc-text > ul {
+  color: #222220;
+  opacity: 0.75;
+  font-size: 18px;
+  margin-bottom: 12px;
+  list-style: none;
+}
+
+.cip-bloc-text > ul  {
+  padding-left: 18px!important;
+}
+
+.cip-bloc-text > ul > li::before {
+  content: "•"; 
+  color: #222220;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+ 
 }
 
 #cip-main > h2 {
@@ -2974,4 +4008,7 @@ font-size: 18px;
 }
 
 /* ARROW BACK TO TOP*/
+
+
+.bx-wrapper, .bx-window, #homeslider {overflow:hidden!important;}
 

@@ -227,7 +227,7 @@ a{
   display: block!important
 }
 
-.current_page_item #menu-line-short {
+.current_page_item span:first-of-type {
   border-bottom: 2px solid #e6362d; 
   width: 20px; 
   margin-top: 11px!important;
@@ -649,9 +649,10 @@ a{
 }
 
 .blocs-flex-image > img {
-  display:block; 
-  width: 100%; 
+  display: block;
+  width: 100%!important;
   position: relative;
+  height: auto;
 }
 
 
@@ -3103,7 +3104,7 @@ input[type=number]::-webkit-outer-spin-button {
   cursor: pointer;
 }
 
-#picto-grandest {
+#picto-grand-est {
   z-index: 14; 
   position: absolute; 
   top: 10px; 

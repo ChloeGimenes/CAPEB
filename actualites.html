@@ -33,7 +33,8 @@
       <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">    
-      
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
       <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
           HTML5 fonctionne correctement avec les anciennes versions de
           Internet Explorer-->
@@ -481,7 +482,10 @@
 
        <!--- EVENT CALENDAR -->
       <div class="calendar-flex">
-          <div id="calendar"></div>
+        <div style="position: relative; width: 566px; height: 568px" >
+          <div style="top: 0; left: 0; position: absolute; width: 540px; height: 550px; z-index: 10; background: white" id="calendar"></div>
+          <div style="bottom: 0; right: 0; position: absolute; height: 480px; width: 540px; background-color: #602483;"></div>
+        </div>
           <div id="result"></div>
       </div>
       <!--- EN OF EVENT CALENDAR -->
@@ -559,6 +563,7 @@
                       eventCate: "Loisir",
                       theContent: "Comme une promenade",
                       eventLink: "http://gpsea.kanbios.fr/evenements/ile-aux-histoires/",
+                      eventLink2: "http://gpsea.kanbios.fr/evenements/ile-aux-histoires/",
                       arrowLink: "http://gpsea.kanbios.fr/wp-content/themes/gpsea/img/arrow.svg",
                       calendar: "Work",
                       color: "redgpsea",
@@ -576,6 +581,7 @@
                       eventCate: "Culture",
                       theContent: "Apprendre à envoyer, recevoir et lire des e-mails",
                       eventLink: "http://gpsea.kanbios.fr/evenements/atelier-mail/",
+                      eventLink2: "http://gpsea.kanbios.fr/evenements/atelier-mail/",
                       arrowLink: "http://gpsea.kanbios.fr/wp-content/themes/gpsea/img/arrow.svg",
                       calendar: "Work",
                       color: "redgpsea",
@@ -593,6 +599,7 @@
                       eventCate: "Culture",
                       theContent: "Atelier pour un premier contact avec l'ordinateur",
                       eventLink: "http://gpsea.kanbios.fr/evenements/decouverte-de-lordinateur/",
+                      eventLink2: "http://gpsea.kanbios.fr/evenements/decouverte-de-lordinateur/",
                       arrowLink: "http://gpsea.kanbios.fr/wp-content/themes/gpsea/img/arrow.svg",
                       calendar: "Work",
                       color: "redgpsea",
@@ -610,6 +617,7 @@
                       eventCate: "Culture",
                       theContent: "Exposition sur les illusions d’optique et les biais cognitifs",
                       eventLink: "http://gpsea.kanbios.fr/evenements/la-semaine-du-cerveau-9/",
+                      eventLink2: "http://gpsea.kanbios.fr/evenements/la-semaine-du-cerveau-9/",
                       arrowLink: "http://gpsea.kanbios.fr/wp-content/themes/gpsea/img/arrow.svg",
                       calendar: "Work",
                       color: "redgpsea",
@@ -623,18 +631,20 @@
                   {
 
                       imageEvent: 'background-image:url(http://gpsea.kanbios.fr/wp-content/uploads/2021/03/semaine-du-cerveau-1.gif)',
-                      eventName: "La semaine du cerveau",
+                      eventName: "Bamboche",
                       eventCate: "Culture",
-                      theContent: "Exposition sur les illusions d’optique et les biais cognitifs",
+                      theContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus pharetra eros.",
                       eventLink: "http://gpsea.kanbios.fr/evenements/la-semaine-du-cerveau-8/",
+                      eventLink2: "http://gpsea.kanbios.fr/evenements/la-semaine-du-cerveau-8/",
                       arrowLink: "http://gpsea.kanbios.fr/wp-content/themes/gpsea/img/arrow.svg",
                       calendar: "Work",
                       color: "redgpsea",
-                      eventTime: "22/03/2021",
+                      eventTime: "23/03/2021",
 
-                      eventTimeConvertDay: "22",
+                      eventTimeConvertDay: "23",
 
-                      eventTimeConvertMonth: "Mar"
+                      eventTimeConvertMonth: "Mar",
+                      
                   },
 
               ];

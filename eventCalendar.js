@@ -1,4 +1,5 @@
 !(function() {
+
   var today = moment();
 
   function Calendar(selector, events) {
@@ -36,13 +37,13 @@
       this.title = createElement("h1");
 
       var right = createElement("div", "right");
-        var contentright = '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 9.23 9.23"><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path d="M9.2,4.81a.5.5,0,0,0,0-.38.71.71,0,0,0-.11-.17L5,.15a.5.5,0,0,0-.71,0,.5.5,0,0,0,0,.7L7.53,4.12H.5a.5.5,0,0,0-.5.5.5.5,0,0,0,.5.5h7L4.26,8.38a.51.51,0,0,0,0,.71.5.5,0,0,0,.36.14A.47.47,0,0,0,5,9.09L9.09,5A.64.64,0,0,0,9.2,4.81Z" fill="#e9483f"/></g></g></svg>';
+        var contentright = '<svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.4176 12.792H13.5426V12.667V8.96747L18.6063 14.0003L13.5426 19.0332V15.3337V15.2087H13.4176H8.17652V12.792H13.4176ZM13.4176 0.791992C20.7544 0.791992 26.7077 6.71008 26.7077 14.0003C26.7077 21.2906 20.7544 27.2087 13.4176 27.2087C6.08074 27.2087 0.127441 21.2906 0.127441 14.0003C0.127441 6.71008 6.08074 0.791992 13.4176 0.791992ZM13.4176 24.792C19.4154 24.792 24.2747 19.9634 24.2747 14.0003C24.2747 8.03724 19.4154 3.20866 13.4176 3.20866C7.41977 3.20866 2.56047 8.03724 2.56047 14.0003C2.56047 19.9634 7.41977 24.792 13.4176 24.792Z" fill="#222220" stroke="#F7F7F7" stroke-width="0.25"/></svg>';
       right.addEventListener("click", function() {
         self.nextMonth();
       });
 
       var left = createElement("div", "left");
-        var contentleft = '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 9.2 9.2"><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path d="M8.7,4.1h-7L5,.85a.48.48,0,0,0,0-.7.48.48,0,0,0-.7,0L.15,4.25A.36.36,0,0,0,0,4.41a.5.5,0,0,0,0,.38A.36.36,0,0,0,.15,5l4.1,4.1a.47.47,0,0,0,.35.15A.5.5,0,0,0,5,8.35L1.71,5.1h7a.5.5,0,0,0,0-1Z" fill="#e9483f"/></g></g></svg>'
+        var contentleft = '<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.098 15.208H13.973V15.333V19.0325L8.90932 13.9997L13.973 8.96682V12.6663V12.7913H14.098H19.3391V15.208H14.098ZM14.098 27.208C6.76121 27.208 0.807915 21.2899 0.807915 13.9997C0.807915 6.70943 6.76121 0.79134 14.098 0.79134C21.4349 0.79134 27.3882 6.70943 27.3882 13.9997C27.3882 21.2899 21.4349 27.208 14.098 27.208ZM14.098 3.20801C8.10025 3.20801 3.24094 8.03658 3.24094 13.9997C3.24094 19.9628 8.10025 24.7913 14.098 24.7913C20.0959 24.7913 24.9552 19.9628 24.9552 13.9997C24.9552 8.03658 20.0959 3.20801 14.098 3.20801Z" fill="#222220" stroke="#F7F7F7" stroke-width="0.25"/></svg>'
       left.addEventListener("click", function() {
         self.prevMonth();
       });
@@ -155,10 +156,10 @@ $('.details').remove();
     });
 
     //Day Name
-    var name = createElement("div", "day-name", day.format("ddd"));
+    var name = createElement("div", "day-name", day.format("dd"));
 
     //Day Number
-    var number = createElement("div", "day-number", day.format("DD"));
+    var number = createElement("div", "day-number", day.format("D"));
 
     //Events
     var events = createElement("div", "day-events");
@@ -264,34 +265,55 @@ $('.details').remove();
     events.forEach(function(ev) {
       var div = createElement("div", "event");
       var square = createElement("div", "event-category " + ev.color);
-    var linkSquare =createElement("a", "linksquare");
-        linkSquare.href = ev.eventLink;  
+    // var linkSquare =createElement("a", "linksquare");
+    //     linkSquare.href = ev.eventLink;  
      var image = createElement("div");
           var linkArrow =createElement("img", "linkarrow");  
         linkArrow.src =  ev.arrowLink;
     image.style= ev.imageEvent;
-    image.className = 'image-calendar';
-    var datefront = createElement("span", "dateformat");
-    var dayfront = createElement("span", "dayfront", ev.eventTimeConvertDay);
-    var monthfront = createElement("span", "monthfront", ev.eventTimeConvertMonth);
+   
     var contenutxt =  createElement("div", "contentext");
-    var span = createElement("h4", "", ev.eventName);
-	var categoryevent = createElement("h6", "", ev.eventCate);
+    var contenutxtlinks =  createElement("div", "contentextlinks");
+    var span = createElement("h3", "", ev.eventName);
+    // var datefront = createElement("span", "dateformat");
+
+    var dateAndCategory = createElement("div", "date-and-category");
+    var fulldatefront = createElement("h4", "fulldatefront", ev.eventTime);
+    var symbole = createElement("p","symb", "-");
+	  var categoryevent = createElement("h4", "", ev.eventCate);
     var contenu = createElement("p", "exer", ev.theContent);
     var btn = createElement("span", "read-more");
+    var btn2 = createElement("span", "read-more2");
+    var linkSquare =createElement("a", "linksquare");
+        linkSquare.href = ev.eventLink;  
+    var linkSquare2 =createElement("a", "linksquare2");
+        linkSquare2.href = ev.eventLink2;  
+    var contenubtn = createElement("p", "name_link", "En savoir plus");
+    var contenubtn2 = createElement("p", "name_link2", "S'inscrire");
         var both = createElement("div", "clearboth");
+    var arrowlink = '<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.72769 8L0 1.7775L1.63615 0L9 8L1.63615 16L0 14.2225L5.72769 8Z" fill="#E6362D"/></svg>';
+     
       div.appendChild(square);
-      div.appendChild(linkSquare);
-      linkSquare.appendChild(image);
-        linkSquare.appendChild(datefront);
-            datefront.appendChild(dayfront);
-            datefront.appendChild(monthfront);
-        linkSquare.appendChild(contenutxt);
-        contenutxt.appendChild(span);
-		contenutxt.appendChild(categoryevent);
-      contenutxt.appendChild(contenu);
-      linkSquare.appendChild(btn);
-      btn.appendChild(linkArrow);
+        div.appendChild(contenutxt);
+        // div.appendChild(linkSquare);
+      // linkSquare.appendChild(image);
+        
+      contenutxt.appendChild(span);
+      // contenutxt.appendChild(datefront);
+      contenutxt.appendChild(dateAndCategory);
+      dateAndCategory.appendChild(fulldatefront);
+      dateAndCategory.appendChild(symbole);
+      dateAndCategory.appendChild(categoryevent);
+      contenutxt.appendChild(contenu)
+      contenutxt.appendChild(contenutxtlinks);
+          contenutxtlinks.appendChild(linkSquare);
+            linkSquare.appendChild(btn);
+                // btn.appendChild(arrowlink);
+                btn.appendChild(contenubtn);
+          contenutxtlinks.appendChild(linkSquare2);
+            linkSquare2.appendChild(btn2);
+              btn2.appendChild(contenubtn2);
+      // btn.appendChild(arrowlink);
       div.appendChild(both);
       wrapper.appendChild(div);
     });

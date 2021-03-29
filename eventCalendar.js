@@ -17,6 +17,7 @@
    
   }
 
+
   Calendar.prototype.draw = function() {
     //Create Header
     this.drawHeader();
@@ -183,7 +184,12 @@ $('.details').remove();
       todaysEvents.forEach(function(ev) {
         var evSpan = createElement("span", ev.color);
         element.appendChild(evSpan);
+        
+        // element.className('.day-number').style.color = "white";
+
       });
+
+
     }
   };
 
@@ -230,16 +236,43 @@ $('.details').remove();
       }
 
       //Create the Details Container
-      details = createElement("div", "details in");
+      var details = createElement("div", "details in");
+
+      
+
+       //Arrows inside results
+          var headerresults = createElement("div", "header-results");
+          var resultsright = createElement("div", "results-right");
+            var contentright = '<svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.4176 12.792H13.5426V12.667V8.96747L18.6063 14.0003L13.5426 19.0332V15.3337V15.2087H13.4176H8.17652V12.792H13.4176ZM13.4176 0.791992C20.7544 0.791992 26.7077 6.71008 26.7077 14.0003C26.7077 21.2906 20.7544 27.2087 13.4176 27.2087C6.08074 27.2087 0.127441 21.2906 0.127441 14.0003C0.127441 6.71008 6.08074 0.791992 13.4176 0.791992ZM13.4176 24.792C19.4154 24.792 24.2747 19.9634 24.2747 14.0003C24.2747 8.03724 19.4154 3.20866 13.4176 3.20866C7.41977 3.20866 2.56047 8.03724 2.56047 14.0003C2.56047 19.9634 7.41977 24.792 13.4176 24.792Z" fill="#222220" stroke="#F7F7F7" stroke-width="0.25"/></svg>';
+          // resultsright.addEventListener("click", function() {
+          //   self.nextMonth();
+          // });
+          var resultsleft = createElement("div", "results-left");
+            var contentleft = '<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.098 15.208H13.973V15.333V19.0325L8.90932 13.9997L13.973 8.96682V12.6663V12.7913H14.098H19.3391V15.208H14.098ZM14.098 27.208C6.76121 27.208 0.807915 21.2899 0.807915 13.9997C0.807915 6.70943 6.76121 0.79134 14.098 0.79134C21.4349 0.79134 27.3882 6.70943 27.3882 13.9997C27.3882 21.2899 21.4349 27.208 14.098 27.208ZM14.098 3.20801C8.10025 3.20801 3.24094 8.03658 3.24094 13.9997C3.24094 19.9628 8.10025 24.7913 14.098 24.7913C20.0959 24.7913 24.9552 19.9628 24.9552 13.9997C24.9552 8.03658 20.0959 3.20801 14.098 3.20801Z" fill="#222220" stroke="#F7F7F7" stroke-width="0.25"/></svg>'
+          // resultsleft.addEventListener("click", function() {
+          //   self.prevMonth();
+          // });
+    
+       //Append the Elements
+          details.appendChild(headerresults);
+          headerresults.appendChild(resultsright);
+          headerresults.appendChild(resultsleft);
+          // this.el.appendChild(this.header);
+            // $('.results-right').append(contentright);
+            // $('.results-left').append(contentleft);
+            resultsright.appendChild(contentright);
+            resultsright.appendChild(contentleft);
 
 
 
       //Create the event wrapper
- var resultEvent = $("#result");
+      var resultEvent = $("#result");
 
       el.parentNode.appendChild(details);
         
      resultEvent.append(details);
+
+
     }
 
     var todaysEvents = this.events.reduce(function(memo, ev) {

@@ -82,6 +82,8 @@ body {
  }
 
 
+
+
  
 /* NAVBAR //////////////////////////////////////////////////////////////////*/
 
@@ -227,7 +229,7 @@ a{
   display: block!important
 }
 
-.current_page_item span:first-of-type {
+#menu-menu-principal > li:first-of-type > span {
   border-bottom: 2px solid #e6362d; 
   width: 20px; 
   margin-top: 11px!important;
@@ -343,6 +345,8 @@ a{
     background: #EEE;
     padding-top: 100px!important; 
     min-height: 550px!important;
+
+    overflow: hidden;
   }
   
   .carousel-cell {
@@ -1215,6 +1219,7 @@ a:hover .bloc-group-white {
     margin: 0; 
     padding-left:24px; 
     color: #e6362d;
+
   }
 
 
@@ -1223,7 +1228,15 @@ a:hover .bloc-group-white {
     margin-left: 40px!important;
     margin-right: 40px!important;
     }
+  
+    #actus-details-main {
+      margin-left: 40px!important;
+      margin-right: 40px!important;
+      }
 
+    #actus-cards {
+      gap: 44px;
+    }
     .actus-card-single {
       width: 30%;
     }
@@ -1235,13 +1248,93 @@ a:hover .bloc-group-white {
     }
   }
 
+  /* @media (max-width: 1200px) {
+  
+      #actus-cards {
+        gap: 44px;
+      }
+    } */
+
+    @media (max-width: 960px) {
+  
+      #actus-cards {
+        gap: 44px;
+       
+      }
+      .actus-changing-card {
+      
+        height: 344px;
+      }
+
+      .actus-card-single {
+        width: 45%;
+      }
+    
+    }
+
+    @media (max-width: 620px) {
+
+
+
+    }
+ 
+
   @media (max-width: 620px) {
-  #actus-main {
-    margin-left: 20px!important;
-    margin-right: 20px!important;
+    #actus-main {
+      margin-left: 20px!important;
+      margin-right: 20px!important;
+      }
+
+    #actus-details-main {
+      margin-left: 20px!important;
+      margin-right: 20px!important;
+      }
+
+      #actus-cards {
+        justify-content: center;
+      }
+  
+      .actus-card-single {
+        width: 65%;
+      }
+
+      .actus-changing-card {
+      
+        height: 344px;
+      }
+
+      #actus-details-bloc {
+        padding: 20px 10px 20px 10px!important;
+      }
+    
+      #actus-details-bloc-image > img {
+        margin-bottom: 12px!important;
+        margin-left: 12px!important;
+        z-index: 10;
+        width: 100%;
+        margin-top: -12px!important;
+    }
+    }
+
+    @media (max-width: 450px) {
+
+      .actus-card-single {
+        width: 90%;
+      }
+
+    }
+
+    @media (max-width: 360px) {
+      #actus-cards > div:nth-child(odd) > div:nth-child(2), 
+        #actus-cards > div:nth-child(even) > div:nth-child(2) {
+        width: 230px;
+        height: 294px;
+      }
+
+      .actus-card-content {
+        height: 190px;     
     }
   }
-
 
   /* ACTUS DETAILS PAGES ///////////////////////////////////////////////////*/
 
@@ -1253,28 +1346,36 @@ a:hover .bloc-group-white {
   }
 
   #actus-details-bloc-image {
-    width: 1110px;
+    /* width: 1110px;
     height: 323px;
     position: relative;
-    margin-top: 40px;
+    margin-top: 40px; */
+    margin-top: 60px; 
+    width: 98%;
+    background-color:#e6362d ;
   }
 
   #actus-details-bloc-image > img {
-    z-index: 10;
+    /* z-index: 10;
     position: absolute;
     width: 1090px;
     top: 0;
-    right: 0;
+    right: 0; */
 
+    margin-bottom: 20px;
+    margin-left: 20px;
+    z-index: 10;
+    width: 100%;
+    margin-top: -20px;
   }
 
   #actus-details-bloc-image > div {
-    position: absolute;
+    /* position: absolute;
     width: 1090px;
     height: 303px;
     bottom: 0;
     left: 0;
-    background-color: #e6362d;
+    background-color: #e6362d; */
   }
 
   #actus-details-main > h1 {
@@ -1395,7 +1496,7 @@ a:hover .bloc-group-white {
     margin-top: 10px
   }
 
-
+ 
   /* CALENDAR /////////////////////////////////////////////////////////////*/
 
   *,
@@ -1409,32 +1510,47 @@ a:hover .bloc-group-white {
 
 
 #calendar {
-    width: 50%;
+    /* width: 50%;
     top: 0; 
     left: 0; 
     position: absolute; 
     width: 540px; 
     height: 550px; 
     z-index: 10; 
-    background: white;
+    background: white; */
     /* margin: 30px;
     height: 450px;
     overflow: hidden; */
+
+    width: 100%;
+    top: 0;
+    left: -20px;
+    position: absolute;
+    height: 454px;
+    z-index: 10;
+    background: white;
 }
 
 #calendar-main {
-  position: relative; 
+  /* position: relative; 
   width: 566px; 
-  height: 568px;
+  height: 568px; */
+
+  margin-left: 20px;
+    margin-top: 80px;
+    background-color: #602483;
+    position: relative;
+    width: 50%;
+    height: 475px;
 }
 
 #calendar-violet {
-  bottom: 0; 
+  /* bottom: 0; 
   right: 0; 
   position: absolute; 
   height: 480px; 
   width: 540px; 
-  background-color: #602483;
+  background-color: #602483; */
 }
 
 #result {
@@ -1442,11 +1558,12 @@ a:hover .bloc-group-white {
 }
 
 .header-calendar {
-    height: 50px;
-    background: transparent;
-    position: relative;
-    z-index: 100;
-    margin-bottom: 20px;
+  margin-top: -95px;
+  height: 50px;
+  background: transparent;
+  position: relative;
+  z-index: 100;
+  margin-bottom: 20px;
 }
 
 .header-calendar h1 {
@@ -1462,7 +1579,7 @@ a:hover .bloc-group-white {
 
 #calendar-flex {
     display: flex;
-    width: 1100px;
+    /* width: 1100px; */
 }
 
 .right {
@@ -1491,7 +1608,7 @@ a:hover .bloc-group-white {
     overflow: hidden;
     opacity: 0;
 
-    width: 540px;
+    width: 100%;
   height: 480px;
   background-color: white;
   box-shadow: 0 4px 15px 0 rgba(131, 131, 131, 0.2);
@@ -1535,14 +1652,14 @@ a:hover .bloc-group-white {
 
 .week {
     background: transparent;
-    padding: 5px 0px 5px 0;
+    padding: 28px 0px 5px 0;
     text-align: center;
 }
 
 .day {
     display: inline-block;
     width: 60px;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     vertical-align: top;
     cursor: pointer;
@@ -1569,9 +1686,6 @@ a:hover .bloc-group-white {
 
 }
 
-
-
-
 .day-name {
     display: none;
     font-size: 20px;
@@ -1585,15 +1699,10 @@ a:hover .bloc-group-white {
     color: #fff !important;
 }
 
-
-
-
 .month .week:first-child div:nth-child(-n+7) .day-name {
     display: block;
     margin-bottom: 30px;
 }
-
-
 
 .month .week:first-child .numactive .day-number {
     /* background-color: #fff;
@@ -1610,16 +1719,18 @@ a:hover .bloc-group-white {
     font-size: 16px;
     letter-spacing: 1.5px;
     color: rgba(34, 34, 32, 0.75);
+
+    position: absolute;
 }
 
 
 .day .day-events {
     list-style: none;
-    margin-top: 3px;
+    /* margin-top: 3px; */
     text-align: center;
     height: 12px;
     line-height: 6px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .day .day-events span {
@@ -1627,25 +1738,65 @@ a:hover .bloc-group-white {
     display: none;
     padding: 0;
     margin: 0;
-    width: 5px;
-    height: 5px;
-    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     line-height: 5px;
     margin: 0 1px;
 }
 
 .redgpsea {
-    background: red;
+    background: #e6362d;
+    opacity: 0.5;
 }
+
+.redgpsea2 {
+  background: #602483;
+  opacity: 0.5;
+}
+
+.redgpsea3 {
+  background: linear-gradient(90deg, #602483 50%, #e6362d 50%);
+  opacity: 0.5;
+}
+
+
+
+
+/* Half-colored-circle*/
+
+
+.header-results {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 50px;
+}
+
+.results-right {
+  background-color: rgb(30, 29, 53);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+    
+}
+
+.results-left {
+  background-color: rgb(29, 71, 52);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
 
 
 .details {
     /* position: relative; */
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
     margin-top: 5px;
-   
 }
 
 .details.in {
@@ -1941,18 +2092,25 @@ font-size: 18px;
 }
 
 .numactive {
-    background-color: #fff;
+    /* background-color: #fff; */
     /* border: 1px solid red;
     color: red !important; */
-    height: 50px;
+    /* height: 50px; */
 }
 
-.numactive .redgpsea {
-    background-color: #fff !important;
+.numactive .redgpsea, 
+  .numactive .redgpsea2,
+    .numactive .redgpsea3 {
+    /* background-color: #fff !important; */
+    opacity: 1;
 }
 
 .numactive .day-name {
-    /* color: red !important; */
+  /* color: red !important; */
+}
+
+.numactive .day-number {
+    /* color: white!important; */
 }
 
 .month .week:first-child .numactive {
@@ -1960,6 +2118,30 @@ font-size: 18px;
     border: none !important;
     color: red !important;
 
+}
+
+
+.opacity-full {
+  opacity: 1;
+}
+.opacity-low {
+  opacity: 0.5;
+}
+
+.orange-date {
+  background-color: #e6362d;
+  height: 50px;
+  width: 50px;
+  /* border: 2px solid gray; */
+  border-radius: 50%;
+}
+
+.violet-date {
+  background-color: #602483;
+  height: 50px;
+  width: 50px;
+  /* border: 2px solid gray; */
+  border-radius: 50%;
 }
 
 /* Animations are cool!  */
@@ -2156,9 +2338,9 @@ font-size: 18px;
     }
 }
 
-@media (max-width:768px) {
+/* @media (max-width:768px) {
     #calendar {
-        width: 360px;
+       
         margin: 0 auto;
         height: auto;
         overflow: hidden;
@@ -2240,11 +2422,11 @@ font-size: 18px;
     }
 
 
-}
+} */
 
 @media (max-width: 414px) {
     #calendar {
-        width: 100%;
+        width: 102%;
 
     }
 
@@ -2271,6 +2453,69 @@ font-size: 18px;
         width: 44px;
     }
 }
+
+@media (max-width : 330px) {
+  .day {
+      width: 36px!important;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .event {
+      width: 80%;
+    }
+  }
+
+@media (max-width: 990px) {
+#calendar-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  #calendar-main {
+    width: 540px;
+    margin-bottom: 60px;
+  }
+
+  #result {
+    width: 100%;
+  }
+
+  .events {
+    display: flex;
+    align-items: center;
+  }
+  .event {
+    width: 445px;
+  }
+
+}
+
+@media (max-width: 620px) {
+ #calendar-main {
+ width : 100%;
+  }
+
+.day-number {
+  font-size: 14px;
+}
+}
+
+@media (max-width: 470px) {
+  #calendar-main {
+  width : 100%;
+   }
+  .day {
+    width: 44px;
+  }
+ }
+
+ @media (max-width: 540px) {
+  .event {
+    width: 100%;
+  }
+ }
+ 
 
 
 /* PAGE MON PARCOURS PATRIMOINE ////////////////////////////////////////////////////////////////*/
@@ -2585,7 +2830,9 @@ a:hover .test-group {
 }
 
 #parcours-results-main > h2 {
-  margin-top: 104px; 
+  /* margin-top: 104px; 
+  margin-bottom: 48px; */
+  margin-top: 40px;
   margin-bottom: 48px;
 }
 
@@ -2996,6 +3243,11 @@ input[type=number]::-webkit-outer-spin-button {
   padding-left: 40px; 
   padding-right:40px;
 }
+
+.accordion-header h2 {
+    font-size: 24px;
+}
+
 
 .les-marches-flex {
   display: flex;
@@ -3546,7 +3798,7 @@ input[type=number]::-webkit-outer-spin-button {
     top: -3%;
     left: 52%;
   }
-  #picto-grandest {
+  #picto-grand-est {
     top: 9%;
     left: 62%;
   }

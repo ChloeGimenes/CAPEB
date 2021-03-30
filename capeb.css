@@ -264,7 +264,7 @@ a{
   opacity: 1!important;
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1100px) {
 
   .header .menu {
     font-size: 18px!important;
@@ -281,7 +281,7 @@ a{
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1099px) {
 
   .header li {
     float: left;

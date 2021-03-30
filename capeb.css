@@ -1652,14 +1652,14 @@ a:hover .bloc-group-white {
 
 .week {
     background: transparent;
-    padding: 28px 0px 5px 0;
+    padding: 26px 0px 5px 0;
     text-align: center;
 }
 
 .day {
     display: inline-block;
     width: 60px;
-    padding: 15px;
+    padding: 12px;
     text-align: center;
     vertical-align: top;
     cursor: pointer;
@@ -1673,16 +1673,39 @@ a:hover .bloc-group-white {
 }
 
 .day.today {
-  background-color: white;
+  /* background-color: white;
   height: 50px;
   width: 50px;
   border: 2px solid gray;
-  border-radius: 50%;
+  border-radius: 50%; */
+}
+
+.day.today span {
+  vertical-align: top;
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 5px;
+    margin: 0 1px;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: -3px;
+    border: 2px solid rgb(194, 191, 191);
+
 }
 
 .day.today .day-number {
   font-weight: 800!important;
   color: #222220!important;
+
+  /* background-color: white;
+    height: 37px;
+    width: 50px;
+    border: 2px solid rgb(189, 188, 188);
+    border-radius: 50%; */
 
 }
 
@@ -1719,8 +1742,8 @@ a:hover .bloc-group-white {
     font-size: 16px;
     letter-spacing: 1.5px;
     color: rgba(34, 34, 32, 0.75);
-
     position: absolute;
+    z-index: 120;
 }
 
 
@@ -1743,7 +1766,14 @@ a:hover .bloc-group-white {
     border-radius: 50%;
     line-height: 5px;
     margin: 0 1px;
+
+    position: absolute;
+    z-index: 0;
+    top: 0px; 
+    left: -3px;
 }
+
+
 
 .redgpsea {
     background: #e6362d;
@@ -1832,6 +1862,7 @@ a:hover .bloc-group-white {
     align-items: flex-end;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
 
 .date-and-category {
@@ -2116,8 +2147,15 @@ font-size: 18px;
 .month .week:first-child .numactive {
     background-color: transparent !important;
     border: none !important;
-    color: red !important;
+    /* color: red !important; */
 
+}
+
+.month .week:first-child .day span {
+  position: absolute;
+	z-index: 0;
+	top: 60px;
+	left: -8px;
 }
 
 
@@ -2427,7 +2465,10 @@ font-size: 18px;
 @media (max-width: 414px) {
     #calendar {
         width: 102%;
+    }
 
+    #calendar-main {
+      height: 468px;
     }
 
     .event {
@@ -2454,10 +2495,19 @@ font-size: 18px;
     }
 }
 
-@media (max-width : 330px) {
+@media (max-width : 348px) {
   .day {
       width: 36px!important;
   }
+}
+
+@media (max-width: 290px) {
+#calendar {
+    width: 105%;
+  }
+#calendar-main {
+  height: 465px;
+}
 }
 
 
@@ -2474,7 +2524,7 @@ font-size: 18px;
   }
   #calendar-main {
     width: 540px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
   }
 
   #result {
@@ -2508,6 +2558,22 @@ font-size: 18px;
   .day {
     width: 44px;
   }
+
+  .month .week:first-child .day span {
+    top: 67px!important;
+    left: 1px!important;
+  }
+
+  .day .day-events span,
+  .day.today span {
+
+      height: 30px;
+      width: 30px;
+      top: 7px;
+      left: 5px;
+  }
+
+
  }
 
  @media (max-width: 540px) {
@@ -2577,8 +2643,12 @@ font-size: 18px;
   margin: 0 0 8px; 
   padding: 17px 15px; 
   border-radius: 8px;
-  border: 1px solid #d8d8d8;
+  border: 1px solid #eeecec;
   cursor: pointer;
+}
+
+.form-check:hover {
+  background-color: rgb(211, 206, 206);
 }
 
 .form-check input:checked {

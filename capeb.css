@@ -123,7 +123,27 @@ body {
   outline: none!important;
 
   line-height: 1!important;
+
+  display: inline-block;
+
 }
+
+
+/* .header li a::after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: #e6362d;
+    transition: 300ms;
+    visibility: hidden;
+  }
+  
+  .header li a:hover::after {
+    width: 100%;
+    visibility: visible;
+  } */
+
 
 .header li a:hover,
 .header .menu-btn:hover {
@@ -201,7 +221,7 @@ a{
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
+.header .menu-btn:checked ~ .menu-menu-principal-container .menu {
   max-height: 380px; 
 }
 
@@ -263,7 +283,7 @@ a{
 
   .header li {
     float: left;
-    padding-right: 16px;
+    padding-right: 24px;
   }
   .header li a {
     /* padding: 20px 30px; */
@@ -275,6 +295,9 @@ a{
     padding-top: 30px!important;
     font-size: 18px;
     color: rgba(16, 16, 16, 0.6)!important;
+  }
+  .header .menu li:nth-child(1) {
+    padding-top: 10px;
   }
   .header .menu li:nth-child(2) {
     padding-top: 10px;
@@ -361,6 +384,8 @@ a{
     justify-content: center;
 
     margin: 0px;
+
+    overflow: hidden;
     /* width: auto!important; */
   }
 
@@ -1226,12 +1251,31 @@ a:hover .bloc-group-white {
     align-items: center;
   }
 
+
   .actus-link-flex > h5 {
     margin: 0; 
     padding-left:24px; 
     color: #e6362d;
 
+    display: inline-block;
   }
+
+  .actus-link-flex > h5::after {
+      content: '';
+      width: 0px;
+      height: 3px;
+      display: block;
+      background: #e6362d;
+      transition: 300ms;
+      visibility: hidden;
+    }
+    
+    .actus-link-flex > h5:hover::after {
+      width: 100%;
+      visibility: visible;
+    }
+
+  
 
 
   @media (max-width: 1200px) {
@@ -1786,17 +1830,17 @@ a:hover .bloc-group-white {
 
 
 
-.redgpsea {
+.regional {
     background: #e6362d;
     opacity: 0.5;
 }
 
-.redgpsea2 {
+.national {
   background: #602483;
   opacity: 0.5;
 }
 
-.redgpsea3 {
+.regional-national {
   background: linear-gradient(90deg, #602483 50%, #e6362d 50%);
   opacity: 0.5;
 }
@@ -2659,7 +2703,7 @@ font-size: 18px;
 }
 
 .form-check:hover {
-  background-color: rgb(211, 206, 206);
+  background-color: rgb(235, 232, 232);
 }
 
 .form-check input:checked {
@@ -2716,6 +2760,9 @@ opacity: 1!important;
   #parcours-results-main {
       margin-left: 20px!important;
       margin-right: 20px!important;
+  }
+  #parcours-main-quizz {
+    padding: 20px 10px 20px 10px;
   }
 
   #parcours-main-quizz button {
@@ -3735,7 +3782,25 @@ input[type=number]::-webkit-outer-spin-button {
   padding-left:24px; 
   color: #e6362d; 
   margin-bottom: 0px;
+
+  display: inline-block;
 }
+
+.changing-card-content-link-flex > h5::after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: #e6362d;
+    transition: 300ms;
+    visibility: hidden;
+  }
+  
+  .changing-card-content-link-flex  > h5:hover::after {
+    width: 100%;
+    visibility: visible;
+  }
+
 
 #marches-contact {
   margin-top: 48px;
@@ -4051,7 +4116,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .cip-bloc-text > p > a {
   color:#e6362d;
-  opacity: 0.75;
+}
+
+.cip-bloc-text > p > a:hover {
+  opacity: 1!important;
 }
 
 
@@ -4106,6 +4174,11 @@ input[type=number]::-webkit-outer-spin-button {
   color: white;
   font-family: 'Roboto Condensed', sans-serif!important;
   font-weight: bold!important;;
+}
+
+#cip-search-button:hover {
+  background-color: #8a241f;
+
 }
 
 #cip-third-details {
@@ -4169,12 +4242,16 @@ font-size: 18px;
 
 #cip-third-details > div > p > span {
   color: #e6362d;
-  opacity: 0.75;
   font-weight: bold;
 }
 
 #cip-third-details > div > p > a {
   color: #222220;
+}
+
+#cip-third-details > div > p > a:hover {
+  color: #000000!important;
+  opacity: 1!important;
 }
 
 .formation-bloc {
@@ -4223,6 +4300,31 @@ font-size: 18px;
   margin-bottom: 0px;
 }
 
+.second-link > h5 {
+  padding-left:24px; 
+  color: #e6362d; 
+  margin-bottom: 0px;
+
+  display: inline-block;
+}
+
+.second-link > h5::after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: #e6362d;
+    transition: 300ms;
+    visibility: hidden;
+  }
+  
+  .second-link > h5:hover::after {
+    width: 100%;
+    visibility: visible;
+  }
+
+
+
 
 
 @media (max-width: 1200px) {
@@ -4261,6 +4363,13 @@ font-size: 18px;
  #cip-bloc-second,
  #cip-bloc-third {
    padding: 20px 10px 20px 10px;
+ }
+ .actus-doc-bloc {
+   height: auto;
+ }
+
+ .second-link {
+   margin-top: 20px;
  }
 }
 

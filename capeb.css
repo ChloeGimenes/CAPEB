@@ -339,6 +339,8 @@ a{
   #flickity-viewport {
     padding-top: 100px; 
     min-height: 550px;
+
+    overflow: hidden;
   }
 
   #carousel {
@@ -999,6 +1001,15 @@ a:hover .bloc-group-white {
       margin-right: 14px;
       font-weight: normal;
     }
+
+    #footer-capeb-flex > a {
+      opacity: 1!important;
+    }
+
+    #footer-capeb-flex > a:hover {
+      opacity: 1.5!important;
+    }
+
 
   @media (max-width: 1200px) { 
     #footer-container .section ul li a{

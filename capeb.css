@@ -125,8 +125,8 @@ body {
   display: inline-block;
 }
 
-
-.header li a::after {
+/* ANIM UNDERLINED //////*/
+.header li:not(.current_page_item) a::after {
     margin-top: 14px;
     content: '';
     width: 0px;
@@ -137,10 +137,11 @@ body {
     visibility: hidden;
   }
   
-  .header li a:hover::after {
+  .header li:not(.current_page_item) a:hover::after {
     width: 40px;
     visibility: visible;
   }
+/* /////////////////////*/
 
   .header li a:hover,
   .header .menu-btn:hover {
@@ -244,8 +245,9 @@ a{
   width: 20px; 
   margin-top: 14px;
   display: block!important;
-
 }
+
+
 
 /* .header-active span {
   border-bottom: 2px solid #e6362d; 
@@ -1069,31 +1071,6 @@ a:hover .bloc-group-white {
 
 
   /* PAGE ACTUS ///////////////////////////////////////////////////////////////////////////////*/
-
-    /* PAGINATION ////////////////////*/
-    /* .pagination {
-      display: flex;
-      justify-content: center;
-      margin-top: 56px;
-    }
-    
-    .pagination a {
-      color: black;
-      float: left;
-      padding: 1px 9px 3px 8px;
-      text-decoration: none;
-    }
-    
-    .pagination a.active {
-      background-color: #222220;
-      color: white;
-      border-radius: 50px;
-    }
-    
-    .pagination a:hover:not(.active) {
-      background-color: #ddd;
-      border-radius: 25px;
-    } */
 
 
   /* BREDCRUMB */
@@ -4276,15 +4253,6 @@ font-size: 18px;
 #cip-third-details > div > p {
   font-size: 18px;
   opacity: 0.75;
-}
-
-#cip-third-details > div > p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 1;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  margin: 0px!important;
   margin-bottom: 10px!important;
 }
 

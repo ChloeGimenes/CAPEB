@@ -138,7 +138,7 @@ body {
   }
   
   .header li:not(.current_page_item) a:hover::after {
-    width: 40px;
+    width: 20px;
     visibility: visible;
   }
   

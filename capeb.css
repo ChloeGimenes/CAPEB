@@ -114,10 +114,6 @@ body {
 }
 
 .header li a {
-  /* display: block; */
-
-  /* padding: 20px 20px; */
-  /* border-right: 1px solid #f4f4f4; */
   text-decoration: none;
   color: rgba(16, 16, 16, 0.6);
   outline: none!important;
@@ -243,20 +239,10 @@ a{
 
 .current_page_item span {
   border-bottom: 2px solid #e6362d; 
-  width: 40px; 
+  width: 20px; 
   margin-top: 14px;
   display: block!important;
 }
-
-
-
-/* .header-active span {
-  border-bottom: 2px solid #e6362d; 
-  width: 20px; 
-  margin-top: 17px;
-  display: block!important;
-} */
-
 
 .current_page_item a {
   font-weight: bold;
@@ -3467,11 +3453,17 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
 }
 
+.pic > img {
+  margin-bottom: 40px; 
+  height: 300px; 
+  box-shadow: 0 4px 15px 0 rgba(131, 131, 131, 0.2);
+}
+
 #picto-ileDeFrance {
   z-index: 20; 
   position: absolute; 
-  top: 26px; 
-  left: 245px; 
+  top: 80px; 
+  left: 224px; 
   opacity: 0.75; 
   cursor: pointer;
 }
@@ -3479,8 +3471,8 @@ input[type=number]::-webkit-outer-spin-button {
 #picto-normandie {
   z-index: 10; 
   position: absolute; 
-  top: 51px; 
-  left: 7px; 
+  top: 113px; 
+  left: 32px; 
   opacity: 0.75; 
   cursor: pointer;
 }
@@ -3488,7 +3480,7 @@ input[type=number]::-webkit-outer-spin-button {
 #picto-bretagne {
   z-index: 19; 
   position: absolute; 
-  top: 8px; 
+  top: 68px; 
   left: 122px; 
   opacity: 0.75; 
   cursor: pointer;
@@ -3497,7 +3489,7 @@ input[type=number]::-webkit-outer-spin-button {
 #picto-nord {
   z-index: 13; 
   position: absolute; 
-  top: -28px; 
+  top: 14px; 
   left: 231px; 
   opacity: 0.75; 
   cursor: pointer;
@@ -3506,8 +3498,8 @@ input[type=number]::-webkit-outer-spin-button {
 #picto-grand-est {
   z-index: 14; 
   position: absolute; 
-  top: 10px; 
-  left: 340px; 
+  top: 90px; 
+  left: 332px; 
   opacity: 0.75; 
   cursor:pointer;
 }
@@ -3515,7 +3507,7 @@ input[type=number]::-webkit-outer-spin-button {
 #picto-bourgogne {
   z-index: 14; 
   position: absolute; 
-  top: 119px; 
+  top: 165px; 
   left: 299px; 
   opacity: 0.75; 
   cursor: pointer;
@@ -3524,8 +3516,8 @@ input[type=number]::-webkit-outer-spin-button {
 #picto-auvergne {
   z-index: 14; 
   position: absolute; 
-  top: 193px; 
-  left: 260px; 
+  top: 253px; 
+  left: 288px; 
   opacity: 0.75; 
   cursor: pointer;
 }
@@ -3533,8 +3525,8 @@ input[type=number]::-webkit-outer-spin-button {
 #picto-cote-dazure {
   z-index: 14; 
   position: absolute; 
-  top: 287px; 
-  left: 321px; 
+  top: 331px; 
+  left: 348px; 
   opacity: 0.75; 
   cursor: pointer;
 }
@@ -3542,8 +3534,8 @@ input[type=number]::-webkit-outer-spin-button {
 #picto-occitanie {
   z-index: 14; 
   position: absolute; 
-  top: 321px; 
-  left: 204px; 
+  top: 348px; 
+  left: 202px; 
   opacity: 0.75; 
   cursor: pointer;
 }
@@ -3552,7 +3544,7 @@ input[type=number]::-webkit-outer-spin-button {
   z-index: 14; 
   position: absolute; 
   top: 259px; 
-  left: 109px; 
+  left: 142px; 
   opacity: 0.75; 
   cursor: pointer;
 }
@@ -3560,7 +3552,7 @@ input[type=number]::-webkit-outer-spin-button {
 #picto-centre {
   z-index: 24; 
   position: absolute; 
-  top: 119px; 
+  top: 150px; 
   left: 200px; 
   opacity: 0.75; 
   cursor: pointer;
@@ -3569,8 +3561,8 @@ input[type=number]::-webkit-outer-spin-button {
 #picto-loire {
   z-index: 24; 
   position: absolute; 
-  top: 124px; 
-  left: 104px; 
+  top: 160px; 
+  left: 96px; 
   opacity: 0.75; 
   cursor: pointer; 
 }
@@ -3598,7 +3590,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .marches-bloc-violet {
   margin-bottom: 40px;
-  padding: 40px 10px 40px 16px;
+  padding: 20px 10px 20px 16px;
   background-color: rgba(96, 36, 131, 0.04);
   border-left: 4px solid #602483;
 }
@@ -3855,6 +3847,9 @@ input[type=number]::-webkit-outer-spin-button {
   margin-bottom: 0px;
 }
 
+.picto-pointer > img {
+  height: 56px;
+  }
   
 
 @media (max-width: 1200px) {
@@ -3876,6 +3871,10 @@ input[type=number]::-webkit-outer-spin-button {
   #marches-bloc-map-first {
     flex-direction: column;
     align-items: center;
+    }
+    #marche-map-bloc-text {
+      padding: 0px 0px 0px 0px!important; 
+   
     }
   }
 
@@ -3942,45 +3941,45 @@ input[type=number]::-webkit-outer-spin-button {
   width: 50px!important;
   }
   .picto-pointer > img {
-    width: 22px;
+    /* width: 22px; */
   }
   #marche-bloc-map-flex {
     padding: 0px;
   }
   #picto-ileDeFrance {
-    top: 9%;
-    left: 47%;
+    top: 19%;
+    left: 45%;
   }
   #picto-normandie {
-    top: 14%;
+    top: 23%;
     left: 9%;
   }
   #picto-bretagne {
-    top: 7%;
+    top: 15%;
     left: 27%;
   }
   #picto-nord {
-    top: -3%;
-    left: 52%;
+    top: 6%;
+    left: 46%;
   }
   #picto-grand-est {
-    top: 9%;
-    left: 62%;
+    top: 20%;
+    left: 66%;
   }
   #picto-bourgogne {
-    top: 26%;
+    top: 34%;
     left: 61%;
   }
   #picto-centre {
-    top: 26%;
-    left: 41%;
+    top: 32%;
+    left: 40%;
   }
   #picto-loire {
-    top: 26%;
-    left: 22%;
+    top: 28%;
+    left: 25%;
   }
   #picto-auvergne {
-    top: 40%;
+    top: 50%;
     left: 56%;
   }
   #picto-cote-dazure {
@@ -3992,7 +3991,7 @@ input[type=number]::-webkit-outer-spin-button {
     left: 28%;
   }
   #picto-occitanie {
-    top: 61%;
+    top: 65%;
     left: 44%;
   }
 
@@ -4001,45 +4000,50 @@ input[type=number]::-webkit-outer-spin-button {
 
   @media (max-width: 400px) { 
 
+  .pic > img {
+    height: 206px; 
+    width: auto;
+  }
+
   #picto-ileDeFrance {
-    top: 4%;
-    left: 47%;
+    top: 14%;
+    left: 43%;
   }
   #picto-normandie {
-    top: 14%;
+    top: 16%;
     left: 9%;
   }
   #picto-bretagne {
-    top: 7%;
-    left: 27%;
+    top: 9%;
+    left: 28%;
   }
   #picto-nord {
-    top: -6%;
-    left: 52%;
+    top: 4%;
+    left: 46%;
   }
-  #picto-grandest {
-    top: 7%;
-    left: 62%;
+  #picto-grand-est {
+    top: 15%;
+    left: 67%;
   }
   #picto-bourgogne {
-    top: 23%;
-    left: 61%;
+    top: 30%;
+    left: 58%;
   }
   #picto-centre {
-    top: 22%;
-    left: 41%;
+    top: 28%;
+    left: 37%;
   }
   #picto-loire {
     top: 23%;
     left: 22%;
   }
   #picto-auvergne {
-    top: 38%;
+    top: 47%;
     left: 56%;
   }
   #picto-cote-dazure {
     top: 57%;
-    left: 69%;
+    left: 65%;
   }
   #picto-aquitaine {
     top: 50%;
@@ -4047,7 +4051,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
   #picto-occitanie {
     top: 61%;
-    left: 44%;
+    left: 38%;
   }
   .les-marches-bloc-image {
   width: 212px;
